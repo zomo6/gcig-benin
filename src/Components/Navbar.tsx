@@ -1,0 +1,68 @@
+"use client"
+
+import {useState} from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import Hamburger from "@/Components/Hamburger";
+import {FaFacebook , FaWhatsapp , FaLinkedin , FaInstagram, FaTelegram , FaTwitter, FaHamburger} from 'react-icons/fa';
+
+function Navbar() {
+    
+    const pathname = usePathname();
+    const [open , setOpen] = useState(false);
+
+    return (
+        <div className="flex h-auto w-full items-center sticky top-0 left-0 z-80 justify-between  sm:pr-3  font-serif  bg-white shadow-md ">
+
+          <Link href="/" className='logo cursor-pointer flex items-center justify-center'>
+                <Image src="/logo.png" alt='logo_GCIG' width={110} height={140} />
+                <h1 className='orange flex mt-2 sm:m-0  text-2xl font-bold'>GCIG BENIN</h1>
+          </Link>
+
+          
+            <ul className='link sm:flex space-x-12 hidden text-xl font-semibold text-pretty text-black/90  ml-6'>
+                <li className={`hover:text-[#F39200] ${pathname ==="/" && "text-[#F39200]"}`}> <Link href="/">  Acceuil  </Link> </li>
+                <li className={`hover:text-[#F39200] ${pathname ==="/Services" && "text-[#F39200]"}`}> <Link href="/Services">  Services  </Link> </li>
+                <li className={`hover:text-[#F39200] ${pathname ==="/About" && "text-[#F39200]"}`}> <Link href="/About">  About Us  </Link> </li>
+                <li className={`hover:text-[#F39200] ${pathname ==="/Contact" && "text-[#F39200]"}`}> <Link href="/Contact">  Contact  </Link> </li>
+            </ul>
+
+
+            <div className='social_medias hidden sm:flex items-center gap-5'>
+                <ul className="flex space-x-4 text-2xl font-medium  sm:border-r-2  sm:border-orange-400 sm:pr-7">
+                    <li> <FaFacebook className='text-[#1877F2]'/> </li>
+                    <li> <FaWhatsapp className="text-green-500"/> </li>
+                    <li> <FaLinkedin className="text-[#0077B5]"/> </li>
+                    <li> <FaInstagram className="text-[#E4405F]"/> </li>
+                    {/* <li> <FaTelegram/> </li> */}
+                    {/* <li> <FaTwitter className="text-[#1DA1F2]"/> </li> */}
+
+                </ul>
+
+                <Link href="/Contact" className="sm:flex hidden rounded-full px-5 py-2 text-center text-lg font-semibold bg-[#304C9C] text-white">Contactez-Nous</Link>
+            </div>
+
+            <FaHamburger onClick={()=>setOpen(!open)} className='sm:hidden flex size-9 mr-2 cursor-pointer'/>
+
+            {
+                open && (
+                     <div className="w-[70%] h-[100vh] backdrop-blur-lg bg-black opacity-90
+                     z-90 flex flex-col py-5 pl-8 absolute top-0 right-0 sm:hidden">
+            
+
+             <ul className='link flex flex-col space-y-6  mt-10 text-3xl font-semibold text-pretty text-white '>
+                <li onClick={()=>setOpen(!open)} className={`hover:text-[#F39200] ${pathname ==="/" && "text-[#F39200]"}`}> <Link href="/">  Acceuil  </Link> </li>
+                <li onClick={()=>setOpen(!open)} className={`hover:text-[#F39200] ${pathname ==="/Services" && "text-[#F39200]"}`}> <Link href="/Services">  Services  </Link> </li>
+                <li onClick={()=>setOpen(!open)} className={`hover:text-[#F39200] ${pathname ==="/About" && "text-[#F39200]"}`}> <Link href="/About">  About Us  </Link> </li>
+                <li onClick={()=>setOpen(!open)} className={`hover:text-[#F39200] ${pathname ==="/Contact" && "text-[#F39200]"}`}> <Link href="/Contact">  Contact  </Link> </li>
+            </ul>
+        </div>
+                )
+            }
+ 
+        </div>
+    )
+}
+
+export default Navbar

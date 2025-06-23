@@ -19,8 +19,108 @@
   }
 }
 
+/* @utility temp {
+  @apply bg-linear-to-bl from-[#304C9C]/10 via-50% via-white to-[#F39200]/40
+} */
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} 
+
+/* body{
+  margin: 0;
+  padding: 0;
+} */
+
+.bleu{
+  color: #304C9C;
 }
+
+.orange{
+  color: #F39200;
+}
+.Hero{
+  background: url('/a.jpg');
+  background-size: cover ;
+}
+
+.swiper-button-next ,
+.swiper-button-prev {
+  color: #F39200 !important ;
+  background-color: rgba(0,0,0,0.3);
+  /* border-radius: 50%; */
+  padding: 10px  !important;
+  display: flex ;
+  align-items: center ;
+  justify-content: center ;
+  width: 40px ;
+  height: 40px;
+  font: bold;
+  
+}
+
+.service{
+  background: url('/house.jpg')  ;
+  background-size: cover ;
+  
+}
+
+/* .bg{
+  background: url('/bgThree.jpg')  ;
+  background-size: cover ;
+  
+} */
+
+.gestion{
+  background: url('/bgOne.jpg')  ;
+  background-size: cover ;
+  
+}
+
+.trapeze{
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%)
+}
+
+/* .trapize{
+  clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%)
+} */
+
+.cliper{
+   clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%)
+}
+
+
+
+
+
+
+
+
+
+ /* <div className="flex mt-28 items-center w-full bg-black text-white justify-center py-5 sm:space-x-20">
+
+                <div className="flex flex-col mt-18 font-serif w-[80%] relative sm:h-[500px] sm:pr-5 sm:pl-6">
+
+                             <div className="sm:w-[500px] sm:hidden sm:h-72 rounded-md shadow-lg absolute -top-44 -ml-20">
+                         <Image src="/vert.jpg" alt="pic" width={400} height={400}
+                          className="object-cover w-full h-full rounded-md shadow-lg"/>
+                     </div>
+
+                                <h2 className="sm:mb-14 mb-8 text-base">"Simplifier la vie de nos clients en prenant soin de leurs espaces et en optimisant la gestion de leur patrimoine immobilier."</h2>
+                                <h1 className='sm:text-xl  font-semibold z-20'>
+                                   Notre mission est de simplifier la vie de nos clients en prenant soin de leurs espaces et en optimisant la gestion de leur patrimoine immobilier. <br/>
+                                    Chez GCIG BENIN, nous nous engageons quotidiennement à délivrer des services d'excellence qui dépassent les attentes,
+                                     libérant ainsi nos clients des contraintes d'entretien et de gestion pour qu'ils puissent se concentrer sur leurs priorités essentielles. <br/>
+                                      Nous apportons des solutions innovantes et durables tout en maintenant des relations de confiance à long terme,
+                                    contribuant activement au développement du secteur immobilier béninois.
+                                   
+                               </h1>
+           
+                     <div className="sm:w-[500px] sm:h-72 sm:hidden rounded-md shadow-lg absolute -bottom-2 -right-15 brightness-70">
+                         <Image src="/vert.jpg" alt="pic" width={400} height={400}
+                          className="object-cover w-full h-full rounded-md shadow-lg"/>
+                     </div>
+                               
+                </div> */
