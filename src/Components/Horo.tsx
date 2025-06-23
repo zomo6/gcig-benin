@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Horo() {
   return (
-    <div className="flex sm:pl-17 sm:pr-6 pl-5 w-full sm:h[100vh] h-[90vh] justify-between space-x-7 bg-[#f4f1f8] mb-10 backdrop-blur-lg overflow-hidden">
+    <div className="flex sm:pl-17 sm:pr-6 shadow-xl pl-5 w-full sm:h[100vh] h-[90vh] justify-between space-x-7 bg-[#f4f1f8] mb-10 backdrop-blur-lg overflow-hidden">
 
         {/* <div className="flex flex-col mt-14  h-full w-[45%]">
             <h1 className="font-semibold text-3xl flex">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -28,7 +28,7 @@ function Horo() {
 
          <div className="absolute blur-2xl bg-[#F39200] rounded-full h-[440px] w-[440px] opacity-20  -mt-40 -ml-6"/>
 
-           <div className="flex  flex-col text-start sm:mt-14 mt-20 z-40 sm:pr-10 ">
+           <div className="flex  flex-col text-start sm:mt-14 mt-10 z-40 sm:pr-10 ">
 
                  <div className="sm:text-5xl text-6xl sm:flex text-center items-center space-y-4  sm:space-x-6 font-bold mb-4 justify-center"> 
                       <h1 className="orange">GCIG BENIN</h1>  <p className="bleu sm:text-3xl -mt-4 text-2xl italic sm:flex hidden">Multi Services</p>

@@ -22,7 +22,7 @@ const Services: React.FC<ServicesProps> = () => {
           <div className="absolute blur-2xl bg-blue-400 rounded-full h-72 w-[600px] bg-blend-lighten justify-center -mt-[610px] opacity-40"/>
 
             <div className="flex flex-col space-y-6 text-center z-20">
-                <h1 className="font-semibold text-2xl text-[#F39200] ">Nos Services</h1>
+                <h1 className="font-semibold text-3xl text-[#F39200] ">Nos Services</h1>
                 <p className="font-bold text-2xl sm:text-3xl text-black flex sm:px-52">
                     Nous offrons une large gamme de services  adaptée à vos problèmes respectifs  
                 </p>

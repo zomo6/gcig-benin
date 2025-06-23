@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -17,7 +17,7 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 /* @utility temp {
   @apply bg-linear-to-bl from-[#304C9C]/10 via-50% via-white to-[#F39200]/40
