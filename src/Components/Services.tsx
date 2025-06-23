@@ -63,7 +63,7 @@ const Services: React.FC<ServicesProps> = () => {
                   // }}
                 //   pagination={{clickable: true}} 
                 navigation
-                  className='flex sm:w-[900px] mt-10 max-w-7xl items-center justify-center relative  overflow-hidden'>
+                  className='flex sm:w-[900px] mt-10 max-w-7xl mx-3 items-center justify-center relative  overflow-hidden'>
                     {
                         nettoyage.map((imo)=>(
                             <SwiperSlide key={imo.id} className="w-64 h-64 flex flex-col rounded-md shadow-xl relative items-center justify-center group">
