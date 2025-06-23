@@ -28,7 +28,7 @@ const Services: React.FC<ServicesProps> = () => {
                 </p>
             </div>
 
-         <div className="flex flex-col sm:space-y-32 space-y-12 mt-10 relative overflow-hidden">
+         <div className="flex flex-col sm:space-y-32 space-y-12 mt-18 relative overflow-hidden">
 
               <div className="sm:flex  sm:space-x-20 space-x-10 relative overflow-hidden">
                 <div className="sm:flex hidden  flex-col rounded-md shadow-lg relative items-center justify-center size-48 sm:w-72 sm:h-80 ring-white ring-10">
@@ -68,7 +68,7 @@ const Services: React.FC<ServicesProps> = () => {
                   className='flex sm:w-[900px] mt-10 max-w-5xl  items-center justify-center relative  overflow-hidden'>
                     {
                         nettoyage.map((imo)=>(
-                            <SwiperSlide key={imo.id} className="sm:w-64 w-40 h-40 sm:h-64 flex flex-col rounded-md shadow-xl relative items-center justify-center group">
+                            <SwiperSlide key={imo.id} className="sm:w-64 w-40 h-52 sm:h-64 flex flex-col rounded-md shadow-xl relative items-center justify-center group">
                                  <div className="flex absolute w-full h-full rounded-md  bg-linear-to-b  from-transparent from-40% to-95% to-black "/>
                                  <Image src={imo.pic} alt="nettoyage" width={400} height={400} className="object-cover rounded-md w-full h-full"/>
 
@@ -131,7 +131,7 @@ const Services: React.FC<ServicesProps> = () => {
                   className='flex sm:w-[900px] mt-10 max-w-5xl items-center justify-center relative  overflow-hidden'>
                     {
                         immobilier.map((imo)=>(
-                            <SwiperSlide key={imo.id} className="sm:w-64 w-40 h-40 sm:h-64 flex flex-col rounded-md shadow-xl relative items-center justify-center group">
+                            <SwiperSlide key={imo.id} className="sm:w-64 w-40 h-52 sm:h-64 flex flex-col rounded-md shadow-xl relative items-center justify-center group">
                                  <div className="flex absolute w-full h-full rounded-md  bg-linear-to-b  from-transparent from-40% to-95% to-black "/>
                                  <Image src={imo.pic} alt="nettoyage" width={400} height={400} className="object-cover rounded-md w-full h-full"/>
 
