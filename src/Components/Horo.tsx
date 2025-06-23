@@ -30,25 +30,25 @@ function Horo() {
 
            <div className="flex  flex-col text-start sm:mt-14 mt-7 z-40 sm:pr-10 ">
 
-                 <div className="sm:text-5xl text-6xl sm:flex text-center items-center space-y-4  sm:space-x-6 font-bold mb-3 justify-center"> 
+                 <div className="sm:text-5xl text-5xl sm:flex text-center items-center space-y-4  sm:space-x-6 font-bold mb-3 justify-center"> 
                       <h1 className="orange">GCIG BENIN</h1>  <p className="bleu sm:text-3xl -mt-4 text-2xl italic sm:flex hidden">Multi Services</p>
                 </div>
 
-                <h1 className="sm:text-5xl text-3xl font-bold text-center"> 
+                <h1 className="sm:text-5xl text-2xl font-bold text-center"> 
                     Un seul prestataire de confiance  pour tous vos besoins d'entretien  <br/> et immobiliers
                 </h1>
 
-                <p className="text-xl font-medium opacity-70 italic flex mt-10 text-center">
+                <p className="text-xl font-medium opacity-70 italic flex mt-7 text-center">
                     Nous prenons soin de vos espaces comme s’ils étaient les nôtres. 
                      Nettoyage, entretien et gestion de biens : un service complet, fiable et sur mesure.
                     {/* Nettoyage, entretien et gestion de biens : un service complet, fiable et sur mesure. <br/> */}
                     
                 </p>
 
-                <div className="flex space-x-8 font-semibold mt-5 sm:text-xl  justify-center">
+                <div className="flex space-x-8 font-semibold mt-5 sm:text-xl text-lg justify-center">
                     <Link href="/Services " 
-                    className="sm:px-8 px-5 py-3 flex sm:py-3  rounded-full text-center shadow-xl  bg-[#F39200] transition-all ease-in text-white"> Nos Services </Link>
-                      <Link href="/Contact" className="sm:px-8 flex sm:py-3 px-7 py-3 rounded-full text-center shadow-2xl  ring-white text-black ring   transition-all ease-in bg-white  hover:text-black">Contactez-Nous </Link>
+                    className="sm:px-8 px-4 py-2 flex sm:py-3  rounded-full text-center shadow-xl  bg-[#F39200] transition-all ease-in text-white"> Nos Services </Link>
+                      <Link href="/Contact" className="sm:px-8 flex sm:py-3 px-4 py-2 rounded-full text-center shadow-2xl  ring-white text-black ring   transition-all ease-in bg-white  hover:text-black">Contactez-Nous </Link>
                 </div>
             </div>
 
