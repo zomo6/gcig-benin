@@ -34,7 +34,7 @@ function Horo() {
                       <h1 className="orange">GCIG BENIN</h1>  <p className="bleu sm:text-3xl -mt-4 text-2xl italic sm:flex hidden">Multi Services</p>
                 </div>
 
-                <h1 className="sm:text-5xl text-2xl font-bold text-center"> 
+                <h1 className="sm:text-5xl text-3xl font-bold text-center"> 
                     Un seul prestataire de confiance  pour tous vos besoins d'entretien  <br/> et immobiliers
                 </h1>
 
@@ -45,7 +45,7 @@ function Horo() {
                     
                 </p>
 
-                <div className="flex space-x-8 font-semibold mt-5 sm:text-xl text-lg justify-center">
+                <div className="flex space-x-5 font-semibold mt-7 sm:text-xl text-lg justify-center">
                     <Link href="/Services " 
                     className="sm:px-8 px-4 py-2 flex sm:py-3  rounded-full text-center shadow-xl  bg-[#F39200] transition-all ease-in text-white"> Nos Services </Link>
                       <Link href="/Contact" className="sm:px-8 flex sm:py-3 px-4 py-2 rounded-full text-center shadow-2xl  ring-white text-black ring   transition-all ease-in bg-white  hover:text-black">Contactez-Nous </Link>
