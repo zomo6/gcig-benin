@@ -28,9 +28,9 @@ function Horo() {
 
          <div className="absolute blur-2xl bg-[#F39200] rounded-full h-[440px] w-[440px] opacity-20  -mt-40 -ml-6"/>
 
-           <div className="flex  flex-col text-start sm:mt-14 mt-7 z-40 sm:pr-10 ">
+           <div className="flex  flex-col text-start sm:mt-14 mt-10 z-40 sm:pr-10 ">
 
-                 <div className="sm:text-5xl text-5xl sm:flex text-center items-center space-y-4  sm:space-x-6 font-bold mb-3 justify-center"> 
+                 <div className="sm:text-5xl text-6xl sm:flex text-center items-center space-y-4  sm:space-x-6 font-bold mb-3 justify-center"> 
                       <h1 className="orange">GCIG BENIN</h1>  <p className="bleu sm:text-3xl -mt-4 text-2xl italic sm:flex hidden">Multi Services</p>
                 </div>
 
@@ -45,7 +45,7 @@ function Horo() {
                     
                 </p>
 
-                <div className="flex space-x-5 font-semibold mt-7 sm:text-xl text-lg justify-center">
+                <div className="flex space-x-3 font-semibold mt-9 sm:text-xl text-lg justify-center">
                     <Link href="/Services " 
                     className="sm:px-8 px-4 py-2 flex sm:py-3  rounded-full text-center shadow-xl  bg-[#F39200] transition-all ease-in text-white"> Nos Services </Link>
                       <Link href="/Contact" className="sm:px-8 flex sm:py-3 px-4 py-2 rounded-full text-center shadow-2xl  ring-white text-black ring   transition-all ease-in bg-white  hover:text-black">Contactez-Nous </Link>
