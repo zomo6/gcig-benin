@@ -28,14 +28,16 @@ const Services: React.FC<ServicesProps> = () => {
                 </p>
             </div>
 
-         <div className="flex flex-col sm:space-y-32 space-y-7 mt-10 relative overflow-hidden">
+         <div className="flex flex-col sm:space-y-32 space-y-12 mt-10 relative overflow-hidden">
 
               <div className="sm:flex  sm:space-x-20 space-x-10 relative overflow-hidden">
                 <div className="sm:flex hidden  flex-col rounded-md shadow-lg relative items-center justify-center size-48 sm:w-72 sm:h-80 ring-white ring-10">
                     <div className="flex absolute w-full h-full rounded-md bg-black/40"/>
                     <Image src="/tool.jpg" alt="nettoyage" width={400} height={400} className="object-cover rounded-md w-full h-full"/>
 
-                   <div className="flex flex-col  items-center rounded-lg justify-center absolute z-20 text-white">
+                   <div
+                    className="flex flex-col  items-center rounded-lg justify-center
+                     absolute z-20 text-white">
 
                         <h1 className="font-bold mt-11 sm:text-3xl text-2xl text-pretty ">Nettoyage</h1>
                          
