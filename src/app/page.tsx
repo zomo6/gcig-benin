@@ -12,13 +12,13 @@ import About from "@/Components/About";
 
 export default function Home() {
   return (
-    <div className="relative temp  overflow-hidden bg-[#f5f5f5]">
+    <div className="relative temp  overflow-hidden ">
 
-        <Horo/>
-        {/* <Hero/>  */}
+        {/* <Horo/> */}
+        <Hero/> 
         {/* <First/>  */}
         {/* <AboutUs/>  */}
-        {/* <About/> */}
+        <About/>
         <Services/> 
         <Galery/> 
         <Garanty/> 

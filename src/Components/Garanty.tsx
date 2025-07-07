@@ -3,9 +3,9 @@ import { FaBell } from 'react-icons/fa';
 
 function Garanty() {
     return (
-        <div>
-                <h1> </h1>
-            <div className="grid sm:grid-cols-4 gap-7 sm:px-20 px-10 py-3 sm:py-6 my-20">
+        <div className="flex flex-col space-y-12 pt-5">
+                <h1 className="text-center font-semibold text-3xl"> Nos Garanties </h1>
+            <div className="grid sm:grid-cols-4 gap-7 sm:px-20 px-10 py-3 sm:py-6 mb-20">
             {
                 Waranty.map((war)=>(
                     <div key={war.id} className="flex flex-col bg-white rounded-md shadow-md p-10 space-y-3">

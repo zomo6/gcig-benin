@@ -5,7 +5,7 @@ import ServiceCTA from '@/Components/ServiceCTA';
 
 function Page() {
     return (
-        <div className="overflow-hidden bg-[#f5f5f5]">
+        <div className="overflow-hidden bg-linear-to-r from-[#F9E7FE] to-[#DAFCFC]">
                         <div className='sm:flex  w-full pb-3 mb-32 sm:mb-0 pt-14  items-center  bg-[#f5f5f5] sm:px-14 px-10'>
                            <div className='sm:trapeze relative rounded-lg shadow-xl h-full sm:ml-10'>
 
@@ -53,7 +53,7 @@ function Page() {
                      </div>
 
                                 <h2 className="sm:mb-14 mb-8 text-base">"Simplifier la vie de nos clients en prenant soin de leurs espaces et en optimisant la gestion de leur patrimoine immobilier."</h2>
-                                <h1 className='sm:text-xl  font-semibold z-20'>
+                                <h1 className='sm:text-xl leading-[32px] font-semibold z-20'>
                                    Notre mission est de simplifier la vie de nos clients en prenant soin de leurs espaces et en optimisant la gestion de leur patrimoine immobilier. <br/>
                                     Chez GCIG BENIN, nous nous engageons quotidiennement à délivrer des services d'excellence qui dépassent les attentes,
                                      libérant ainsi nos clients des contraintes d'entretien et de gestion pour qu'ils puissent se concentrer sur leurs priorités essentielles. <br/>
@@ -61,17 +61,17 @@ function Page() {
                                     contribuant activement au développement du secteur immobilier béninois.
                                    
                                </h1>
-           
+{/*            
                      <div className="sm:w-[500px] sm:h-72 sm:hidden rounded-md shadow-lg absolute -bottom-10 -right-15 brightness-70">
                          <Image src="/vert.jpg" alt="pic" width={400} height={400}
                           className="object-cover w-full h-full rounded-md shadow-lg"/>
-                     </div>
+                     </div> */}
                                
                 </div>
 
                 <div className="sm:grid hidden grid-cols-1 gap-7">
                     <div className="w-[500px] h-72 ml-28 rounded-md shadow-lg"> <Image src="/e.jpg" alt="pic" width={400} height={400} className="object-cover w-full h-full rounded-md shadow-lg"/> </div>
-                    <div className="w-[500px] h-72 rounded-md shadow-lg"> <Image src="/vert.jpg" alt="pic" width={400} height={400} className="object-cover w-full h-full rounded-md shadow-lg"/> </div>
+                    <div className="w-[500px] h-72 rounded-md shadow-lg hidden sm:flex"> <Image src="/vert.jpg" alt="pic" width={400} height={400} className="object-cover w-full h-full rounded-md shadow-lg"/> </div>
                     {/* <div className="w-64 h-64"> <Image src="/g.jpg" alt="pic" width={400} height={400} className="object-cover w-full h-full"/> </div> */}
                 </div>
             </div>
@@ -79,7 +79,7 @@ function Page() {
             <div className="Engagement">
                 <h1></h1>
 
-                <div className='grid sm:grid-cols-3 sm:gap-7 gap-10 px-14 py-14 text-center my-10'>
+                <div className='grid sm:grid-cols-3 sm:gap-7 gap-10 px-14 py-14 text-center mt-10 mb-3'>
                     {
                         vals.map((val)=>(
                             <div key={val.id} className="flex flex-col sm:space-y-8 space-y-6 items-center justify-center">
@@ -87,8 +87,8 @@ function Page() {
                                 <FaBell className="text-3xl font-bold "/>
 
                                 <div className="flex flex-col font-serif space-y-5">
-                                    <h2 className='text-2xl font-bold'> {val.title} </h2>
-                                    <p className='text-lg font-medium text-black/60'> {val.desc} </p>
+                                    <h2 className='sm:text-2xl text-xl font-bold'> {val.title} </h2>
+                                    <p className='sm:text-lg text-lg font-medium text-black/60'> {val.desc} </p>
                                 </div>
                             </div>
                         ))
@@ -97,20 +97,20 @@ function Page() {
             </div>
 
             <div className="équipe w-full px-14 py-16 items-center justify-center sm:space-y-16 space-y-14 bg-gray-300/10">
-                <h1 className='text-2xl font-serif font-bold text-center'>Une équipe compétente, disponible et prèt à vous rendre service </h1>
+                <h1 className='sm:text-2xl text-xl font-serif font-bold text-center'>Une équipe compétente, disponible et prèt à vous rendre service </h1>
 
-                <div className="grid sm:grid-cols-4 grid-cols-1 gap-6">
+                <div className="grid sm:grid-cols-4 grid-cols-1 gap-6 px-2">
                     {
                         teams.map((team)=>(
-                            <div key={team.id} className='rounded-md h-80 shadow-xl relative'>
+                            <div key={team.id} className='rounded-md sm:h-80 h-60 shadow-xl relative'>
                                 <div className="w-full h-full absolute ">
                                     <Image src={team.pic} alt="pic" width={400} height={400} className="object-cover w-full h-full rounded-md"/>
                                 </div>
 
-                                <div className="w-full   space-y-2 text-center sm:py-6 py-3 bg-black/40  text-white sm:top-60 top-58 rounded-b-md relative z-20">
-                                    <h2 className="font-bold text-xl font-serif"> {team.name} </h2>
+                                <div className="w-full   space-y-2 text-center sm:py-6 py-3 bg-black/40  text-white sm:top-60 top-40 rounded-b-md relative z-20">
+                                    <h2 className="font-bold sm:text-xl text-lg font-serif"> {team.name} </h2>
 
-                                    <p className=" text-lg text-pretty font-medium italic"> {team.poste} </p>
+                                    <p className=" sm:text-lg text-sm text-pretty font-medium italic"> {team.poste} </p>
                                 </div>
                             </div>
                         ))

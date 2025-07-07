@@ -24,16 +24,16 @@ function Page() {
                <div className="absolute blur-2xl bg-[#F39200] rounded-full h-[440px] w-[440px] opacity-20  -mt-40 -ml-6"/>
             
                 <h1 className='flex flex-col space-y-7 items-center text-3xl font-bold font-serif mt-10 z-40 text-white'> 
-                  <p className="sm:text-7xl text-5xl text-[#F39200] text-center">GCIG BENIN <br />
+                  <p className="sm:text-7xl text-3xl text-[#F39200] text-center">GCIG BENIN <br />
                    <i className='sm:text-5xl text-[#304C9C]'>Multi  Services</i> </p> </h1>
 
-                <p className='text-xl font-medium text-center text-black italic z-50 text-white'>Nettoyage professionnel, entretien complet et gestion immobilière : nous prenons soin <br/>
+                <p className='sm:text-xl text-lg font-medium text-center  italic z-50 text-white'>Nettoyage professionnel, entretien complet et gestion immobilière : nous prenons soin <br/>
                  de vos espaces pour que vous puissiez vous concentrer sur l'essentiel.</p>
 
                  <div className="absolute blur-2xl bg-blue-500 rounded-full h-[440px] w-[440px] opacity-20  bottom-4 ml-64 mt-28"/>
             </div>
 
-             <div className='flex flex-col space-y-7 py-10 sm:px-14 px-7 overflow-hidden' id="netoy">
+             <div className='sm:flex flex-col hidden space-y-7 py-10 sm:px-14 px-7 overflow-hidden' id="netoy">
                 <div className='flex'> <h2 className='sm:text-3xl text-2xl font-semibold font-sans overflow-hidden'>Nettoyage et Entretien</h2> </div>
 
                    <Swiper
@@ -77,7 +77,7 @@ function Page() {
                 </Swiper>
             </div>
 
-            <div className='flex flex-col space-y-7 pt-4 pb-10 sm:px-14 px-7' id="immo">
+            <div className='sm:flex flex-col hidden space-y-7 pt-4 pb-10 sm:px-14 px-7' id="immo">
                 <div className='flex'> <h2 className='sm:text-3xl text-2xl font-semibold font-sans'>Gestion immobilière</h2> </div>
 
                    <Swiper
@@ -121,7 +121,102 @@ function Page() {
                 </Swiper>
             </div>
 
-           
+
+            <div className='sm:hidden flex flex-col space-y-8 w-full mt-6 pt-10 pb-4 bg-[#FCFCF7]' id="netoy">
+            
+                            <h1 className='text-2xl font-semibold ml-4'> Nettoyage et Entretien </h1>
+                             <Swiper
+            
+                                modules={[Navigation, Pagination, Autoplay]}
+                                loop={true}
+                                spaceBetween={50}
+                              slidesPerView={1}
+                              // autoplay={{delay: 3000,
+                              // disableOnInteraction: false
+                              // }}
+                              // pagination={{clickable: true}} 
+                            navigation
+                              className='flex w-full h-auto items-center justify-center mx-10'
+                            
+                            >
+                                  {
+                                      nettoyage.map((imo)=>(
+                           <SwiperSlide key={imo.id} id={imo.tag} 
+                           className="w-64  h-auto flex flex-col rounded-md shadow-xl space-y-6   border-b-white/10  relative items-center justify-center group ring-4 ring-white">
+                                 {/* <div className="flex absolute w-full h-full rounded-md  bg-linear-to-b  from-transparent from-40% to-95% to-black "/>
+                                 <Image src="/Hero.jpeg" alt="nettoyage" width={400} height={400} className="object-cover rounded-md w-full h-full"/>
+
+                                 <h1 className="absolute text-xl font-bold text-white flex text-center bottom-7 mx-4"> {imo.title} </h1> */}
+
+                                 <div className="w-full h-52"> <Image src={imo.pic} alt="pc" width={500} height={500} className="object-cover rounded-md w-full h-full"/></div>
+
+                                {/* <div className='items-center justify-center bg-black/35 backdrop-blur-sm w-full rounded-md h-full hidden group-hover:flex absolute'>
+                                  <div className='flex space-x-4 items-center justify-center px-6 py-3 text-lg font-sans font-semibold rounded-full bg-black text-white'>
+                                    <Link href="/Services">Tout les services</Link> <FaArrowRight/>
+                                  </div> */}
+
+                                <div className='flex flex-col space-y-5 px-4 pb-5 '>
+                                    <h1 className="flex sm:text-xl text-xl font-bold "> {imo.title} </h1>
+
+                                    <div className='sm:text-md text-lg flex'> 
+                                       {imo.desc}
+                                    </div>
+                                </div>
+                                
+                            </SwiperSlide>
+                        ))
+                                  }
+            
+                            </Swiper>
+                      </div>
+
+            <div className='sm:hidden flex flex-col space-y-8 w-full mt-6 pt-10 pb-4 bg-[#FCFCF7]' >
+            
+                            <h1 className='text-2xl font-semibold ml-4'> Gestion Immobilière </h1>
+                             <Swiper
+            
+                                modules={[Navigation, Pagination, Autoplay]}
+                                loop={true}
+                                spaceBetween={50}
+                              slidesPerView={1}
+                              // autoplay={{delay: 3000,
+                              // disableOnInteraction: false
+                              // }}
+                              // pagination={{clickable: true}} 
+                            navigation
+                              className='flex w-full h-auto items-center justify-center mx-10'
+                                id="immo"
+                            >
+                                  {
+                                      immobilier.map((imo)=>(
+                           <SwiperSlide key={imo.id} id={imo.tag} 
+                           className="w-64  h-auto flex flex-col rounded-md shadow-xl space-y-6   border-b-white/10  relative items-center justify-center group ring-4 ring-white">
+                                 {/* <div className="flex absolute w-full h-full rounded-md  bg-linear-to-b  from-transparent from-40% to-95% to-black "/>
+                                 <Image src="/Hero.jpeg" alt="nettoyage" width={400} height={400} className="object-cover rounded-md w-full h-full"/>
+
+                                 <h1 className="absolute text-xl font-bold text-white flex text-center bottom-7 mx-4"> {imo.title} </h1> */}
+
+                                 <div className="w-full h-52"> <Image src={imo.pic} alt="pc" width={500} height={500} className="object-cover rounded-md w-full h-full"/></div>
+
+                                {/* <div className='items-center justify-center bg-black/35 backdrop-blur-sm w-full rounded-md h-full hidden group-hover:flex absolute'>
+                                  <div className='flex space-x-4 items-center justify-center px-6 py-3 text-lg font-sans font-semibold rounded-full bg-black text-white'>
+                                    <Link href="/Services">Tout les services</Link> <FaArrowRight/>
+                                  </div> */}
+
+                                <div className='flex flex-col space-y-5 px-4 pb-5 '>
+                                    <h1 className="flex sm:text-xl text-xl font-bold "> {imo.title} </h1>
+
+                                    <div className='sm:text-md text-lg flex'> 
+                                       {imo.desc}
+                                    </div>
+                                </div>
+                                
+                            </SwiperSlide>
+                        ))
+                                  }
+            
+                            </Swiper>
+                      </div>                 
 
             <Nettoyage/>
 

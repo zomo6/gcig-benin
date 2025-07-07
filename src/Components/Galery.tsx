@@ -18,21 +18,23 @@ function Galery() {
 
                     
                 </div>
+
                 <div className="  rounded-md shadow-xl bg-green-400 text-center relative"> 
                      <div className="flex absolute w-full h-full rounded-md bg-black/40"/>
                     {/* <div className="absolute w-full h-full bg-radial from-black/70 from-40% to-transparent rounded-md "/> */}
-                    <h1 className="text-white sm:block hidden font-extrabold sm:text-3xl font-sans absolute bottom-18 flex ">Secteur de la santé</h1>
+                    <h1 className="text-white sm:block  font-extrabold sm:text-3xl font-sans absolute bottom-4 left-1  sm:bottom-18  sm:left-2 ">Santé et Hygiène</h1>
                     <Image src="/e.jpg" alt='pic' width={400} height={400} className='w-full h-full object-cover rounded-md'/> 
                 </div>
+                
                 <div className=" row-span-3 rounded-md shadow-xl relative"> 
                     <div className="absolute sm:hidden w-full h-full bg-linear-to-br from-transparent  to-black/70 rounded-md "/>
                      <div className="sm:flex hidden absolute w-full h-full rounded-md bg-black/40"/>
-                     <h1 className="text-white sm:hidden font-extrabold sm:text-3xl font-sans absolute bottom-8 flex left-5">Secteur Immobilier et Construction</h1>
+                     <h1 className="text-white sm:hidden font-extrabold sm:text-3xl font-sans absolute bottom-8 flex left-5"> Immobiliers et Construction</h1>
                     <Image src="/agt.jpg" alt='pic' width={400} height={400} className='w-full h-full object-cover rounded-md'/> 
                 </div>
                 <div className="  rounded-md shadow-xl relative"> 
                      <div className="flex absolute w-full h-full rounded-md bg-black/40"/>
-                     <h1 className="text-white hidden sm:block font-extrabold sm:text-3xl font-sans absolute bottom-8 flex left-5">Secteur Immobilier et Construction</h1>
+                     <h1 className="text-white hidden sm:block font-extrabold sm:text-3xl font-sans absolute bottom-8 flex left-5"> Immobilier et Construction</h1>
                     <Image src="/h.jpg" alt='pic' width={400} height={400} className='w-full h-full object-cover rounded-md'/> 
                 </div>
                 <div className=" col-span-2 rounded-md shadow-xl relative"> 

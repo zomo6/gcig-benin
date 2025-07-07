@@ -17,18 +17,18 @@ interface ServicesProps {
 
 const Services: React.FC<ServicesProps> = () => {
     return (
-        <div className="flex flex-col space-y-12 items-center overflow-hidden justify-center py-3 px-10 sm:py-7 sm:px-20 w-full  mt-4 mb-10 bg-[#F5F5F5]">
+        <div className="flex flex-col space-y-3 items-center overflow-hidden justify-center py-9  sm:py-7 sm:px-20 w-full  sm:mt-4 sm:mb-10 bg-[#F5F5F5]">
 
-          <div className="absolute blur-2xl bg-blue-400 rounded-full h-72 w-[600px] bg-blend-lighten justify-center -mt-[610px] opacity-40"/>
+          <div className="absolute blur-2xl hidden sm:flex bg-blue-400 rounded-full h-72 w-[600px] bg-blend-lighten justify-center -mt-[610px] opacity-40"/>
 
             <div className="flex flex-col space-y-6 text-center z-20">
-                <h1 className="font-semibold text-3xl text-[#F39200] ">Nos Services</h1>
-                <p className="font-bold text-2xl sm:text-3xl text-black flex sm:px-52">
+                {/* <h1 className="font-semibold text-3xl  ">Nos Services</h1> */}
+                <p className="font-semibold text-2xl sm:text-3xl text-black flex sm:px-52">
                     Nous offrons une large gamme de services  adaptée à vos problèmes respectifs  
                 </p>
             </div>
 
-         <div className="flex flex-col sm:space-y-32 space-y-12 mt-18 relative overflow-hidden">
+         <div className="sm:flex flex-col hidden sm:space-y-32 space-y-12 mt-18 relative overflow-hidden">
 
               <div className="sm:flex  sm:space-x-20 space-x-10 relative overflow-hidden">
                 <div className="sm:flex hidden  flex-col rounded-md shadow-lg relative items-center justify-center size-48 sm:w-72 sm:h-80 ring-white ring-10">
@@ -115,7 +115,7 @@ const Services: React.FC<ServicesProps> = () => {
                     
                 </div>
 
-                <p className="text-3xl font-bold  sm:hidden text-center ml-8 text-[#F39200]">
+                <p className="text-3xl font-bold sm:mt-0 mt-3 sm:hidden text-center ml-8 text-[#F39200]">
                   Services Immobiliers</p>
 
                 <Swiper
@@ -208,6 +208,90 @@ const Services: React.FC<ServicesProps> = () => {
                 </Swiper>
             </div> */}
           </div>
+
+          <div className='sm:hidden flex flex-col space-y-8 w-full mt-12'>
+
+                <h1 className='text-2xl font-semibold ml-4'> Nettoyage et Entretien </h1>
+                 <Swiper
+
+                    modules={[Navigation, Pagination, Autoplay]}
+                    loop={true}
+                    spaceBetween={50}
+                  slidesPerView={1}
+                  autoplay={{delay: 3000,
+                  disableOnInteraction: false
+                  }}
+                  // pagination={{clickable: true}} 
+                navigation
+                  className='flex w-full h-auto items-center justify-center '
+                
+                >
+                      {
+                           nettoyage.map((net)=>(
+                            <SwiperSlide key={net.id}
+                             className="h-80 w-full flex  flex-col rounded-md shadow-xl relative items-center justify-center group">
+                                 <div className="flex absolute w-full h-full rounded-md  bg-linear-to-b  from-transparent from-40% to-95% to-black "/>
+                                 <Image src={net.pic} alt="nettoyage" width={400} height={400} 
+                                 className="object-cover rounded-md w-full h-full"/>
+
+                                 <h1 className="absolute text-xl font-bold text-white flex  bottom-8 ml-4"> {net.title} </h1>
+
+                                  <Link href={`/Services#${net.tag}`} className="sm:flex hidden rounded-full shadow-xl ring-4 ring-white bg-[#f5f5f5] items-center justify-center absolute z-40 px-5 py-1 right-3 top-3">
+                                   <FaArrowRight className='font-semibold text-xl -rotate-25'/>
+                                 </Link >
+
+                                 <Link href="/Services#netoy" className="flex sm:hidden rounded-full shadow-xl ring-4 ring-white bg-[#f5f5f5] items-center justify-center absolute z-40 px-5 py-1 right-3 top-3">
+                                   <FaArrowRight className='font-semibold text-xl -rotate-25'/>
+                                 </Link > 
+                            </SwiperSlide>
+                        ))
+                      }
+
+                </Swiper>
+          </div>
+
+          <div className='sm:hidden flex flex-col space-y-8 w-full mt-6 pt-10 pb-4 bg-[#FCFCF7]'>
+
+                <h1 className='text-2xl font-semibold ml-4'> Gestion Immobilière </h1>
+                 <Swiper
+
+                    modules={[Navigation, Pagination, Autoplay]}
+                    loop={true}
+                    spaceBetween={50}
+                  slidesPerView={1}
+                  autoplay={{delay: 3000,
+                  disableOnInteraction: false
+                  }}
+                  // pagination={{clickable: true}} 
+                navigation
+                  className='flex w-full h-auto items-center justify-center '
+                
+                >
+                      {
+                           immobilier.map((net)=>(
+                            <SwiperSlide key={net.id}
+                             className="h-80 w-full flex  flex-col rounded-md shadow-xl relative items-center justify-center group">
+                                 <div className="flex absolute w-full h-full rounded-md  bg-linear-to-b  from-transparent from-40% to-95% to-black "/>
+                                 <Image src={net.pic} alt="nettoyage" width={400} height={400} 
+                                 className="object-cover rounded-md w-full h-full"/>
+
+                                 <h1 className="absolute text-xl font-bold text-white flex  bottom-8 ml-4"> {net.title} </h1>
+
+                                  <Link href={`/Services#${net.tag}`} className="flex sm:hidden rounded-full shadow-xl ring-4 ring-white bg-[#f5f5f5] items-center justify-center absolute z-40 px-5 py-1 right-3 top-3">
+                                   <FaArrowRight className='font-semibold text-xl -rotate-25'/>
+                                 </Link >
+
+                                 <Link href="/Services#immo" className="sm:flex hidden rounded-full shadow-xl ring-4 ring-white bg-[#f5f5f5] items-center justify-center absolute z-40 px-5 py-1 right-3 top-3">
+                                   <FaArrowRight className='font-semibold text-xl -rotate-25'/>
+                                 </Link > 
+                            </SwiperSlide>
+                        ))
+                      }
+
+                </Swiper>
+          </div>
+
+
         </div>
     );
 };

@@ -13,13 +13,13 @@ function ServiceTrick() {
                 </div>
 
                 <div className='flex flex-col sm:w-[45%] h-[500px]'>
-                  <div className="flex flex-col space-y-6 items-center   mt-22">
-                    <h1 className='sm:text-2xl text-xl font-semibold flex ml-36'>
+                  <div className="flex flex-col space-y-6 items-center  sm:px-0 px-10  sm:mt-22 mt-32 sm:ml-32">
+                    <h1 className='sm:text-2xl text-xl font-semibold flex '>
                         Que vous ayez besoin d'un service ponctuel ou d'un accompagnement à long terme, notre équipe GCIG BENIN est là pour vous accompagner. 
                         Chaque projet est unique, c'est pourquoi nous proposons des solutions sur-mesure adaptées à vos besoins spécifiques et votre budget.  
                     </h1>
 
-                    <p className='text-lg text-gray-400 font-serif  ml-36'>Obtenez votre devis personnalisé en moins de 24h  et découvrez
+                    <p className='text-lg text-gray-500 font-serif '>Obtenez votre devis personnalisé en moins de 24h  et découvrez
                          comment nous pouvons simplifier la gestion de vos espaces et biens immobiliers.</p> 
                   </div>
                 </div>

@@ -1,3 +1,12 @@
+'use client';
+
+import Link from "next/link"
+import {Swiper , SwiperSlide} from 'swiper/react';
+import 'swiper/swiper-bundle.css';
+import {Navigation , Pagination , Autoplay} from 'swiper/modules';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 import { testimony } from '@/app/constant'
 import Image from 'next/image'
 import React from 'react'
@@ -12,7 +21,7 @@ function Testimony() {
 
             <div className="absolute blur-2xl bg-blue-400 rounded-full h-96 w-[400px] bg-blend-multiply mt-20  opacity-40"/>
 
-           <div className='grid sm:grid-cols-4 sm:gap-4 gap-6 z-10'>
+           <div className='hidden sm:grid grid-cols-4 gap-4 z-10'>
                 {
                     testimony.map((testy)=>(
                         <div key={testy.id} className='flex flex-col rounded-lg shadow-xl sm:p-3 p-5 space-y-7 z-20 border border-white/10'>
@@ -31,6 +40,43 @@ function Testimony() {
                     ))
                 }
            </div>
+
+            <div className='sm:hidden flex w-full items-center'>
+                
+             <Swiper
+
+                    modules={[Navigation, Pagination, Autoplay]}
+                    loop={true}
+                    spaceBetween={50}
+                  slidesPerView={1}
+                  autoplay={{delay: 3000,
+                  disableOnInteraction: false
+                  }}
+                  // pagination={{clickable: true}} 
+                navigation
+                  className='flex w-full items-center '
+                
+                >
+                      {
+                    testimony.map((testy)=>(
+                        <SwiperSlide key={testy.id} className='flex flex-col rounded-lg shadow-xl sm:p-3 p-5 space-y-7 z-20 border border-white/10'>
+                        <div className='flex justify-between items-center'>
+                           <div className="w-14 h-14"> <Image src={testy.pic} alt={testy.author} width={150} height={150}  className='object-cover rounded-full w-full h-full  ring-4 ring-white'/> </div>
+
+                            <h1 className='text-xl font-bold '> {testy.author} </h1>
+                        </div>
+
+                        <div className='flex flex-col space-y-4'>
+                            <p className='text-gray-400 italic text-lg font-serif font-medium'> {testy.avis.slice(0,285)}... </p>
+
+                            <p className='text-md font-normal'> {testy.Services} </p>
+                        </div>
+                        </SwiperSlide>
+                    ))
+                }
+
+                </Swiper>
+            </div>
            
         </div>
     )

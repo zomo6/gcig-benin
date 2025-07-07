@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className=""
+        className="bg-linear-to-r from-[#F9E7FE] to-[#DAFCFC]"
       >
         <Navbar/>
         

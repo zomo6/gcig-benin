@@ -44,6 +44,7 @@ body {
 .Hero{
   background: url('/a.jpg');
   background-size: cover ;
+  
 }
 
 .swiper-button-next ,
@@ -79,6 +80,10 @@ body {
   
 }
 
+/* .cta{
+  clip-path: polygon(80% 100%, 100% 0, 100% 100%, 0 100%)
+} */
+
 .trapeze{
   clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%)
 }
@@ -89,6 +94,30 @@ body {
 
 .cliper{
    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%)
+}
+
+.voil{
+   background: url('/agt.jpg')  ;
+   background-size: cover ;
+   /* clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%) */
+}
+
+.anim{
+  animation: anim 3s ease-in infinite;
+}
+
+@keyframes anim{
+  0% {
+    transform: translateX(0);
+  }
+
+   50% {
+    transform: translateX(50);
+  }
+
+   100% {
+    transform: translateX(100);
+  }
 }
 
 
