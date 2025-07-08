@@ -69,8 +69,7 @@ function Hero() {
                 </h1> */}
 
                 <p className="text-xl font-semibold opacity-80 italic text-center  items-center justify-center flex mt-8 z-50">
-                    Nous prenons soin de vos espaces comme s’ils étaient les nôtres. 
-                     Nettoyage, entretien et gestion de biens : un service complet, fiable et sur mesure. <br/>
+                    L’excellence au service de la propreté – Des solutions sur mesure pour un environnement sain et accueillant.
                     
                 </p>
 
@@ -95,8 +94,10 @@ function Hero() {
                 </h1> */}
 
                 <p className="text-xl font-semibold opacity-80 italic text-center  items-center justify-center flex mt-8 z-50">
-                    Nous prenons soin de vos espaces comme s’ils étaient les nôtres. 
-                     Nettoyage, entretien et gestion de biens : un service complet, fiable et sur mesure. <br/>
+                    {/* Nous prenons soin de vos espaces comme s’ils étaient les nôtres. 
+                     Nettoyage, entretien et gestion de biens : un service complet, fiable et sur mesure. <br/> */}
+
+                     Gestion immobilière transparente pour propriétaires sans tracas – Maximisez votre sérénité et vos rendements.
                    
                     
                 </p>
