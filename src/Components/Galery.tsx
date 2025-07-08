@@ -4,8 +4,8 @@ import {  FaUser } from 'react-icons/fa';
 function Galery() {
 
     return (
-        <div className="flex flex-col space-y-16 px-10  sm:px-20 bg-[#D9E0E8] mb-10 py-5 sm:py-10">
-            <div className="flex flex-col items-center space-y-2 justify-center text-center">
+        <div className="flex flex-col space-y-16   sm:px-20 bg-[#D9E0E8] mb-10 py-5 sm:py-10">
+            <div className="flex flex-col items-center px-10 sm:px-0 space-y-2 justify-center text-center">
                 <h1 className="text-3xl font-bold text-pretty">Nous opérons dans plusieurs domaines </h1>
                 <h1 className="text-3xl font-bold text-pretty">à l'échelle nationale</h1>
             </div>
@@ -46,7 +46,7 @@ function Galery() {
 
             </div>
 
-            <div className="grid grid-cols-1 gap-6 sm:hidden">
+            <div className="grid grid-cols-1 gap-6 sm:hidden px-3">
 
                 <div className="w-full h-52 rounded-lg flex ring-4 ring-white items-center">
                     <div className="w-[40%] justify-start pl-4 pt-8  h-full bg-blue-400 rounded-l-lg flex flex-col space-y-4 items-center">
@@ -66,26 +66,26 @@ function Galery() {
                     <Image src="/k.jpg" alt="secteur " width={400} height={400} className="object-cover rounded-lg w-[60%] h-full"/>
                 </div>
 
-                <div className="w-full h-52 rounded-l-lg flex ring-4 ring-white items-center">
+                <div className="w-full h-52 rounded-lg flex ring-4 ring-white items-center">
 
-                     <Image src="/house.jpg" alt="secteur " width={400} height={400} className="object-cover rounded-lg w-[60%] h-full"/>
+                     <Image src="/house.jpg" alt="secteur " width={400} height={400} className="object-cover rounded-l-lg w-[60%] h-full"/>
 
                     <div className="w-[40%] justify-start pl-4 pt-8  h-full bg-blue-400 rounded-r-lg flex flex-col space-y-4 items-center">
                         {/* <FaUser className="text-xl font-sans font-bold "/> */}
-                        <h1 className="text-lg text-white font-semibold mt-12 ml-2">Immobilier et Construction</h1>
+                        <h1 className="text-lg text-white font-semibold mt-12 ">Immobilier et Construction</h1>
                     </div>
 
                    
                 </div>
 
-                    <div className="w-full h-52 rounded-l-lg flex ring-4 ring-white items-center">
+                    <div className="w-full h-52 rounded-lg flex ring-4 ring-white items-center">
 
                      <Image src="/industriel.jpg" alt="secteur " width={400} height={400} 
-                     className="object-cover rounded-lg w-[60%] h-full"/>
+                     className="object-cover rounded-l-lg w-[60%] h-full"/>
 
                     <div className="w-[40%] justify-start pl-4 pt-8  h-full bg-blue-400 rounded-r-lg flex flex-col space-y-4 items-center">
                         {/* <FaUser className="text-xl font-sans font-bold "/> */}
-                        <h1 className="text-lg text-white font-semibold mt-10 ml-5">Nettoyage Industriel</h1>
+                        <h1 className="text-lg text-white font-semibold mt-10 ">Nettoyage Industriel</h1>
                     </div>
 
                    

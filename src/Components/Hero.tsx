@@ -45,9 +45,9 @@ function Hero() {
                     loop={true}
                     spaceBetween={50}
                   slidesPerView={1}
-                //   autoplay={{delay: 3000,
-                //   disableOnInteraction: false
-                //   }}
+                  autoplay={{delay: 3000,
+                  disableOnInteraction: false
+                  }}
                   pagination={{clickable: true}} 
                 // navigation
                   className='flex w-full h-full items-center justify-center '

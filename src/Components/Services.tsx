@@ -291,7 +291,7 @@ const Services: React.FC<ServicesProps> = () => {
                 </Swiper>
           </div>
             
-            <div className='flex flex-col sm:hidden space-y-10 mt-10 '>
+            <div className='flex flex-col sm:hidden space-y-10 mt-10 px-4'>
 
                   <div className='nettoy flex flex-col w-full h-72 relative ring-6 ring-white rounded-lg'>
                       

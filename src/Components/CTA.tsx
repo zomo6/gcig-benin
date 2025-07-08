@@ -25,7 +25,7 @@ function CTA() {
 
                 <Link href="/Contact" 
                 className="text-center sm:-ml-40  sm:px-8 px-5 text-lg text-pretty sm:py-5 py-4 text-white bg-[#304C9C]
-                 sm:rounded-xl rounded-md font-semibold ring-2 ring-white z-20 ml-26">Contactez-Nous</Link>
+                 sm:rounded-xl rounded-md font-semibold ring-2 ring-white z-20 w-full">Contactez-Nous</Link>
 
         </div>
     )
