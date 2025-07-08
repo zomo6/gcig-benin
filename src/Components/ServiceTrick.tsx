@@ -12,7 +12,7 @@ function ServiceTrick() {
                     <Image src="/h.jpg" alt="pic" width={400} height={400} className="object-cover w-full h-full rounded-xl" />
                 </div>
 
-                <div className='flex flex-col sm:w-[45%] h-[500px]'>
+                <div className='flex flex-col sm:w-[45%] sm:h-[500px]'>
                   <div className="flex flex-col space-y-6 items-center  sm:px-0 px-10  sm:mt-22 mt-32 sm:ml-32">
                     <h1 className='sm:text-2xl text-xl font-semibold flex '>
                         Que vous ayez besoin d'un service ponctuel ou d'un accompagnement à long terme, notre équipe GCIG BENIN est là pour vous accompagner. 
