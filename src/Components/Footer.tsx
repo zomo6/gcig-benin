@@ -29,10 +29,10 @@ function Footer() {
                 </div>
 
                 <ul className="flex mt-10 sm:mt-0 sm:ml-0 ml-10 space-x-8 sm:text-3xl text-xl font-medium  ">
-                    <li> <FaFacebook className='text-[#1877F2]'/> </li>
-                    <li> <FaWhatsapp className="text-green-500"/> </li>
-                    <li> <FaLinkedin className="text-[#0077B5]"/> </li>
-                    <li> <FaInstagram className="text-[#E4405F]"/> </li>
+                    <li> <Link href="https://www.facebook.com/profile.php?id=61576113031036&mibextid=rS40aB7S9Ucbxw6v" target="_blank"><FaFacebook className='text-[#1877F2]'/> </Link> </li>
+                    {/* <li> <FaWhatsapp className="text-green-500"/> </li> */}
+                    <li> <Link href="http://www.linkedin.com/in/gcig-benin-9b0207365" target="_blank"><FaLinkedin className="text-[#0077B5]"/> </Link> </li>
+                    <li> <Link href="https://www.instagram.com/gcig_benin/"  target="_blank"> <FaInstagram className="text-[#E4405F]"/></Link>  </li>
                     
 
                 </ul>
