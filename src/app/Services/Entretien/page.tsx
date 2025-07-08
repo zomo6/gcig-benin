@@ -13,7 +13,7 @@ function Page() {
     return (
         <div className="bg overflow-hidden">
           
-            <div className="flex flex-col items-center justify-center space-y-9 sm:pt-20 sm:pb-18 py-12  px-10 sm:px-24 text-pretty relative  bg-blend-mutiply serv ">
+            <div className="flex flex-col items-center justify-center space-y-9 sm:pt-20 sm:pb-18 py-5  px-10 sm:px-24 text-pretty relative  bg-blend-mutiply serv ">
 
                <div className="absolute blur-3xl bg-[#F39200] rounded-full h-[440px] w-[440px] opacity-20  -mt-40 -ml-6"/>
             
