@@ -3,7 +3,7 @@ import Image from 'next/image';
 function ServiceTrick() {
 
     return (
-         <div className='sm:flex w-full pt-5 pb-10 items-center  relative sm:px-14 bg-[#fcfcfc] shadow'>
+         <div className='sm:flex w-full pt-5 pb-10 items-center mb-20 sm:mb-0  relative sm:px-14 bg-[#fcfcfc] shadow'>
                 <div className='shadow-xl'>
                     <Image src="/house.jpg" alt="pic" width={400} height={400} className="object-cover w-full h-full sm:rounded-lg" />
                 </div>
@@ -12,7 +12,7 @@ function ServiceTrick() {
                     <Image src="/h.jpg" alt="pic" width={400} height={400} className="object-cover w-full h-full rounded-xl" />
                 </div>
 
-                <div className='flex flex-col sm:w-[45%] sm:h-[500px]'>
+                <div className='flex flex-col sm:w-[45%] sm:h-[500px] h-auto'>
                   <div className="flex flex-col space-y-6 items-center  sm:px-0 px-10  sm:mt-22 mt-32 sm:ml-32">
                     <h1 className='sm:text-2xl text-xl font-semibold flex '>
                         Que vous ayez besoin d'un service ponctuel ou d'un accompagnement à long terme, notre équipe GCIG BENIN est là pour vous accompagner. 
