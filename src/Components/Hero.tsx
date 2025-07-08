@@ -68,7 +68,7 @@ function Hero() {
                     Un seul prestataire de confiance  pour tous vos besoins d'entretien  et immobiliers
                 </h1> */}
 
-                <p className="text-xl font-semibold opacity-80 italic text-center  items-center justify-center flex mt-8 z-50">
+                <p className="text-2xl font-semibold opacity-80 italic text-center  items-center justify-center flex mt-8 z-50">
                     L’excellence au service de la propreté – Des solutions sur mesure pour un environnement sain et accueillant.
                     
                 </p>
@@ -93,7 +93,7 @@ function Hero() {
                     Un seul prestataire de confiance <br/> pour tous vos besoins d'entretien  <br/> et immobiliers
                 </h1> */}
 
-                <p className="text-xl font-semibold opacity-80 italic text-center  items-center justify-center flex mt-8 z-50">
+                <p className="text-2xl font-semibold opacity-80 italic text-center  items-center justify-center flex mt-8 z-50">
                     {/* Nous prenons soin de vos espaces comme s’ils étaient les nôtres. 
                      Nettoyage, entretien et gestion de biens : un service complet, fiable et sur mesure. <br/> */}
 

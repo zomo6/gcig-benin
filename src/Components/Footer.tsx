@@ -28,7 +28,7 @@ function Footer() {
                     </div>
                 </div>
 
-                <ul className="flex mt-10 sm:mt-0 sm:ml-0 ml-10 space-x-8 text-xl font-medium  ">
+                <ul className="flex mt-10 sm:mt-0 sm:ml-0 ml-10 space-x-8 sm:text-3xl text-xl font-medium  ">
                     <li> <FaFacebook className='text-[#1877F2]'/> </li>
                     <li> <FaWhatsapp className="text-green-500"/> </li>
                     <li> <FaLinkedin className="text-[#0077B5]"/> </li>

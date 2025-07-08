@@ -68,6 +68,13 @@ body {
   
 }
 
+.serv{
+  background: url('/a.jpg')  ;
+  background-size: cover ;
+  opacity: 1;
+  
+}
+
 /* .bg{
   background: url('/bgThree.jpg')  ;
   background-size: cover ;

@@ -10,12 +10,20 @@ import { nettoyage , immobilier } from '@/app/constant';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaArrowRight , FaUser } from 'react-icons/fa';
+// import { Router } from 'next/router';
+import { useRouter } from 'next/navigation'
+
 
 interface ServicesProps {
     
 }
 
 const Services: React.FC<ServicesProps> = () => {
+
+
+  const router = useRouter();
+
+
     return (
         <div className="flex flex-col space-y-3 items-center overflow-hidden justify-center py-9  sm:py-7 sm:px-20 w-full  sm:mt-4 sm:mb-10 bg-[#F5F5F5]">
 
@@ -293,40 +301,40 @@ const Services: React.FC<ServicesProps> = () => {
             
             <div className='flex flex-col sm:hidden space-y-10 mt-10 px-4'>
 
-                  <div className='nettoy flex flex-col w-full h-72 relative ring-6 ring-white rounded-lg'>
+                  <div onClick={()=>(router.push("./Services/Entretien"))} className='nettoy cursor-pointer flex flex-col w-full h-72 relative ring-6 ring-white rounded-lg'>
                       
                       <div className="absolute w-full h-full rounded-lg bg-linear-to-r from-blue-500  via-transparent  to-transparent backdrop-blur-[1px]"/>
                       <Image src="/a.jpg" alt="service de nettoyage et entretien" width={300} height={300}
                        className='w-full h-full object-cover rounded-lg'/>
 
-                      <div className='absolute space-y-10  z-40 bottom-12 left-10 text-white items-center justify-start'>
+                      <div className='absolute space-y-10  z-40 bottom-14 left-10 text-white items-center justify-start'>
 
                         {/* <FaUser className=" text-2xl font-medium"/> */}
 
-                        <h1 className="text-xl font-bold ">Nettoyage et Entretient</h1>
+                        <h1 className="text-3xl font-bold ">Nettoyage et Entretient</h1>
 
-                        <Link href="/Services#nettoy" className=" hover:bg-blue-400  ring-2  rounded-full bg-white/40 backdrop-blur-md px-7 py-3 text-center text-md font-semibold">
+                        {/* <Link href="/Services#nettoy" className=" hover:bg-blue-400  ring-2  rounded-full bg-white/40 backdrop-blur-md px-7 py-3 text-center text-md font-semibold">
                             En Savoir Plus
-                        </Link>
+                        </Link> */}
                       </div>
 
                   </div>
 
-                   <div className='nettoy flex flex-col w-full h-72 relative ring-6 ring-white rounded-lg'>
+                   <div onClick={()=>(router.push("./Services/Immobilier"))} className='nettoy cursor-pointer flex flex-col w-full h-72 relative ring-6 ring-white rounded-lg'>
                       
                       <div className="absolute w-full h-full rounded-lg bg-linear-to-r from-[#F39200]  via-transparent  to-transparent backdrop-blur-[1px]"/>
                       <Image src="/clef.jpg" alt="service de nettoyage et entretien" width={300} height={300}
                        className='w-full h-full object-cover rounded-lg '/>
 
-                      <div className='absolute space-y-10  z-40 bottom-12 left-10 text-white items-center justify-start'>
+                      <div className='absolute space-y-10  z-40 bottom-14 left-10 text-white items-center justify-start'>
 
                         {/* <FaUser className=" text-2xl font-medium"/> */}
 
-                        <h1 className="text-xl font-bold ">Gestion Immobilière</h1>
+                        <h1 className="text-3xl font-bold ">Gestion Immobilière</h1>
 
-                        <a href="/Services#immo" className=" hover:bg-blue-400  ring-2  rounded-full bg-white/40 backdrop-blur-md px-7 py-3 text-center text-md font-semibold">
+                        {/* <a href="/Services#immo" className=" hover:bg-blue-400  ring-2  rounded-full bg-white/40 backdrop-blur-md px-7 py-3 text-center text-md font-semibold">
                             En Savoir Plus
-                        </a>
+                        </a> */}
                       </div>
 
                   </div>

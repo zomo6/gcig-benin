@@ -66,6 +66,19 @@ function Galery() {
                     <Image src="/k.jpg" alt="secteur " width={400} height={400} className="object-cover rounded-lg w-[60%] h-full"/>
                 </div>
 
+                 <div className="w-full h-52 rounded-lg flex ring-4 ring-white items-center">
+
+                     <Image src="/industriel.jpg" alt="secteur " width={400} height={400} 
+                     className="object-cover rounded-l-lg w-[60%] h-full"/>
+
+                    <div className="w-[40%] justify-start pl-4 pt-8  h-full bg-blue-400 rounded-r-lg flex flex-col space-y-4 items-center">
+                        {/* <FaUser className="text-xl font-sans font-bold "/> */}
+                        <h1 className="text-lg text-white font-semibold mt-10 ">Nettoyage Industriel</h1>
+                    </div>
+
+                   
+                </div>
+
                 <div className="w-full h-52 rounded-lg flex ring-4 ring-white items-center">
 
                      <Image src="/house.jpg" alt="secteur " width={400} height={400} className="object-cover rounded-l-lg w-[60%] h-full"/>
@@ -78,18 +91,7 @@ function Galery() {
                    
                 </div>
 
-                    <div className="w-full h-52 rounded-lg flex ring-4 ring-white items-center">
-
-                     <Image src="/industriel.jpg" alt="secteur " width={400} height={400} 
-                     className="object-cover rounded-l-lg w-[60%] h-full"/>
-
-                    <div className="w-[40%] justify-start pl-4 pt-8  h-full bg-blue-400 rounded-r-lg flex flex-col space-y-4 items-center">
-                        {/* <FaUser className="text-xl font-sans font-bold "/> */}
-                        <h1 className="text-lg text-white font-semibold mt-10 ">Nettoyage Industriel</h1>
-                    </div>
-
                    
-                </div>
 
             </div>
         </div>
