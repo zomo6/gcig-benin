@@ -3,8 +3,8 @@ import { FaBell } from 'react-icons/fa';
 
 function Garanty() {
     return (
-        <div className="flex flex-col space-y-12 pt-5">
-                <h1 className="text-center font-semibold text-3xl"> Nos Garanties </h1>
+        <div className="flex flex-col sm:space-y-12 space-y-8 pt-5">
+                <h1 className="text-center font-semibold sm:text-3xl text-xl"> Pourquoi nous choisir ? </h1>
             <div className="grid sm:grid-cols-4 gap-7 sm:px-20 px-10 py-3 sm:py-6 mb-20">
             {
                 Waranty.map((war)=>(

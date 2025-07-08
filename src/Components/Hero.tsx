@@ -11,7 +11,7 @@ import 'swiper/css/autoplay';
 function Hero() {
 
     return ( 
-        <div className="w-full h-[90vh] Hero sm:flex text-center  flex flex-col   text-white bg-black relative sm:mb-10 ">
+        <div className="w-full sm:h-[90vh] h-[70%] Hero sm:flex text-center  flex flex-col   text-white bg-black relative sm:mb-10 ">
 
             <div className="absolute w-full hidden sm:flex h-full bg-linear-to-r from-black from-20%   via-black/70 to-transparent z-10 "/>
 
@@ -38,7 +38,7 @@ function Hero() {
                 </div>
             </div>
 
-            <div className='mobileUX sm:hidden flex w-full h-full items-center justify-center z-40'>
+            <div className='mobileUX sm:hidden flex w-full h-[70%] items-center justify-center z-40 rounded-bl-xl '>
                 <Swiper
 
                     modules={[Navigation, Pagination, Autoplay]}
@@ -50,17 +50,18 @@ function Hero() {
                 //   }}
                   pagination={{clickable: true}} 
                 // navigation
-                  className='flex w-full h-full items-center justify-center'
+                  className='flex w-full h-full items-center justify-center '
                 
                 >
 
-                    <SwiperSlide className="relative">
+                    <SwiperSlide className="relative pb-9">
 
                  <div className="absolute w-full flex h-full bg-linear-to-r from-black  to-transparent backdrop-blur-[1px]  voile"/>
                              <div className="flex  flex-col  text-start mt-22 mx-10 justify-center items-center z-40">
 
                 <div className="text-3xl flex flex-col space-y-1 font-bold justify-center items-center mb-3  mt-2 z-50"> 
-                      <h1 className="orange">GCIG BENIN</h1>  <p className="">Multi Services</p>
+                      <h1 className="orange">GCIG BENIN</h1>  
+                      
                 </div>
 
                 {/* <h1 className="text-2xl font-bold flex text-center text-white z-50"> 
@@ -75,18 +76,18 @@ function Hero() {
 
                 <div className="flex flex-col space-y-8  w-full mx-32 font-semibold mt-18  z-50">
                     <Link href="/Services " className="px-8 py-4 w-full rounded-full text-center bg-linear-to-r from-[#F39200]/30 to-[#304C9C] transition-all ease-in hover:text-black"> Nos Services </Link>
-                    <Link href="/Contact" className="px-8 py-3 rounded-full w-full text-center shadow ring ring-white text-gray-300  transition-all ease-in hover:bg-white  hover:text-black">Contactez-Nous </Link>
+                    {/* <Link href="/Contact" className="px-8 py-3 rounded-full w-full text-center shadow ring ring-white text-gray-300  transition-all ease-in hover:bg-white  hover:text-black">Contactez-Nous </Link> */}
                 </div>
             </div>
                     </SwiperSlide>
 
-            <SwiperSlide className="relative voil">
+            <SwiperSlide className="relative voil pb-10">
 
                  <div className="absolute w-full flex h-full bg-linear-to-r from-black  to-transparent backdrop-blur-[1px]  voile"/>
                              <div className="flex  flex-col  text-start mt-22 mx-10 justify-center items-center z-40">
 
                 <div className="text-3xl sm:flex flex-col space-y-1  font-bold justify-center items-center mb-4  z-50"> 
-                      <h1 className="orange text-center">GCIG BENIN</h1>  <p className="text-center">Multi Services</p>
+                      <h1 className="orange text-center">GCIG BENIN</h1>  
                 </div>
 
                 {/* <h1 className="text-5xl font-bold"> 
@@ -102,7 +103,7 @@ function Hero() {
 
                 <div className="flex flex-col space-y-8   w-full mx-32 font-semibold mt-18  z-50">
                     <Link href="/Services " className="px-8 py-4 w-full rounded-full text-center bg-linear-to-r from-[#F39200]/30 to-[#304C9C] transition-all ease-in hover:text-black"> Nos Services </Link>
-                    <Link href="/Contact" className="px-8 py-3 rounded-full w-full text-center shadow ring ring-white text-gray-300  transition-all ease-in hover:bg-white  hover:text-black">Contactez-Nous </Link>
+                    {/* <Link href="/Contact" className="px-8 py-3 rounded-full w-full text-center shadow ring ring-white text-gray-300  transition-all ease-in hover:bg-white  hover:text-black">Contactez-Nous </Link> */}
                 </div>
              </div>
             </SwiperSlide>

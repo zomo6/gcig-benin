@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import {  FaUser } from 'react-icons/fa';
 
 function Galery() {
 
@@ -9,7 +10,7 @@ function Galery() {
                 <h1 className="text-3xl font-bold text-pretty">à l'échelle nationale</h1>
             </div>
 
-            <div className="grid sm:grid-cols-4 sm:gap-6 gap-4">
+            <div className="hidden sm:grid sm:grid-cols-4 sm:gap-6 gap-4">
 
                 <div className=" col-span-2 rounded-md shadow-2xl  relative"> 
                      <div className="absolute w-full h-full bg-linear-to-br from-transparent  to-black/70 rounded-md "/>
@@ -41,6 +42,53 @@ function Galery() {
                     <div className="absolute w-full h-full bg-linear-to-br from-transparent  to-black/70 rounded-md "/>
                     <h1 className="text-white font-extrabold sm:text-3xl text-2xl font-sans absolute sm:bottom-18 bottom-8 right-6">Secteur Industriel</h1>
                     <Image src="/Hero.jpeg" alt='pic' width={400} height={400} className='w-full h-full object-cover rounded-md'/> 
+                </div>
+
+            </div>
+
+            <div className="grid grid-cols-1 gap-6 sm:hidden">
+
+                <div className="w-full h-52 rounded-lg flex ring-4 ring-white items-center">
+                    <div className="w-[40%] justify-start pl-4 pt-8  h-full bg-blue-400 rounded-l-lg flex flex-col space-y-4 items-center">
+                        {/* <FaUser className="text-xl font-sans font-bold "/> */}
+                        <h1 className="text-lg text-white font-semibold mt-8">Bureaux et Espaces Commerciaux</h1>
+                    </div>
+
+                    <Image src="/a.jpg" alt="secteur " width={400} height={400} className="object-cover rounded-lg w-[60%] h-full"/>
+                </div>
+
+                <div className="w-full h-52 rounded-lg flex ring-4 ring-white items-center">
+                    <div className="w-[40%] justify-start pl-4 pt-8  h-full bg-blue-400 rounded-l-lg flex flex-col space-y-4 items-center">
+                        {/* <FaUser className="text-xl font-sans font-bold "/> */}
+                        <h1 className="text-lg text-white font-semibold mt-10 flex ml-2">Santé et Hygiène</h1>
+                    </div>
+
+                    <Image src="/k.jpg" alt="secteur " width={400} height={400} className="object-cover rounded-lg w-[60%] h-full"/>
+                </div>
+
+                <div className="w-full h-52 rounded-l-lg flex ring-4 ring-white items-center">
+
+                     <Image src="/house.jpg" alt="secteur " width={400} height={400} className="object-cover rounded-lg w-[60%] h-full"/>
+
+                    <div className="w-[40%] justify-start pl-4 pt-8  h-full bg-blue-400 rounded-r-lg flex flex-col space-y-4 items-center">
+                        {/* <FaUser className="text-xl font-sans font-bold "/> */}
+                        <h1 className="text-lg text-white font-semibold mt-12 ml-2">Immobilier et Construction</h1>
+                    </div>
+
+                   
+                </div>
+
+                    <div className="w-full h-52 rounded-l-lg flex ring-4 ring-white items-center">
+
+                     <Image src="/industriel.jpg" alt="secteur " width={400} height={400} 
+                     className="object-cover rounded-lg w-[60%] h-full"/>
+
+                    <div className="w-[40%] justify-start pl-4 pt-8  h-full bg-blue-400 rounded-r-lg flex flex-col space-y-4 items-center">
+                        {/* <FaUser className="text-xl font-sans font-bold "/> */}
+                        <h1 className="text-lg text-white font-semibold mt-10 ml-5">Nettoyage Industriel</h1>
+                    </div>
+
+                   
                 </div>
 
             </div>

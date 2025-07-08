@@ -9,7 +9,7 @@ import 'swiper/css/autoplay';
 import { nettoyage , immobilier } from '@/app/constant';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight , FaUser } from 'react-icons/fa';
 
 interface ServicesProps {
     
@@ -209,7 +209,7 @@ const Services: React.FC<ServicesProps> = () => {
             </div> */}
           </div>
 
-          <div className='sm:hidden flex flex-col space-y-8 w-full mt-12'>
+          <div className='sm:hidden hidden flex-col space-y-8 w-full mt-12'>
 
                 <h1 className='text-2xl font-semibold ml-4'> Nettoyage et Entretien </h1>
                  <Swiper
@@ -250,7 +250,7 @@ const Services: React.FC<ServicesProps> = () => {
                 </Swiper>
           </div>
 
-          <div className='sm:hidden flex flex-col space-y-8 w-full mt-6 pt-10 pb-4 bg-[#FCFCF7]'>
+          <div className='sm:hidden hidden flex-col space-y-8 w-full mt-6 pt-10 pb-4 bg-[#FCFCF7]'>
 
                 <h1 className='text-2xl font-semibold ml-4'> Gestion Immobilière </h1>
                  <Swiper
@@ -290,7 +290,47 @@ const Services: React.FC<ServicesProps> = () => {
 
                 </Swiper>
           </div>
+            
+            <div className='flex flex-col sm:hidden space-y-10 mt-10 '>
 
+                  <div className='nettoy flex flex-col w-full h-72 relative ring-6 ring-white rounded-lg'>
+                      
+                      <div className="absolute w-full h-full rounded-lg bg-linear-to-r from-blue-500  via-transparent  to-transparent backdrop-blur-[1px]"/>
+                      <Image src="/a.jpg" alt="service de nettoyage et entretien" width={300} height={300}
+                       className='w-full h-full object-cover rounded-lg'/>
+
+                      <div className='absolute space-y-10  z-40 bottom-12 left-10 text-white items-center justify-start'>
+
+                        {/* <FaUser className=" text-2xl font-medium"/> */}
+
+                        <h1 className="text-xl font-bold ">Nettoyage et Entretient</h1>
+
+                        <Link href="/Services#nettoy" className=" hover:bg-blue-400  ring-2  rounded-full bg-white/40 backdrop-blur-md px-7 py-3 text-center text-md font-semibold">
+                            En Savoir Plus
+                        </Link>
+                      </div>
+
+                  </div>
+
+                   <div className='nettoy flex flex-col w-full h-72 relative ring-6 ring-white rounded-lg'>
+                      
+                      <div className="absolute w-full h-full rounded-lg bg-linear-to-r from-[#F39200]  via-transparent  to-transparent backdrop-blur-[1px]"/>
+                      <Image src="/clef.jpg" alt="service de nettoyage et entretien" width={300} height={300}
+                       className='w-full h-full object-cover rounded-lg '/>
+
+                      <div className='absolute space-y-10  z-40 bottom-12 left-10 text-white items-center justify-start'>
+
+                        {/* <FaUser className=" text-2xl font-medium"/> */}
+
+                        <h1 className="text-xl font-bold ">Gestion Immobilière</h1>
+
+                        <a href="/Services#immo" className=" hover:bg-blue-400  ring-2  rounded-full bg-white/40 backdrop-blur-md px-7 py-3 text-center text-md font-semibold">
+                            En Savoir Plus
+                        </a>
+                      </div>
+
+                  </div>
+            </div>
 
         </div>
     );

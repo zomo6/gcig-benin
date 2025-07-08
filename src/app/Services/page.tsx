@@ -25,9 +25,9 @@ function Page() {
             
                 <h1 className='flex flex-col space-y-7 items-center text-3xl font-bold font-serif mt-10 z-40 text-white'> 
                   <p className="sm:text-7xl text-3xl text-[#F39200] text-center">GCIG BENIN <br />
-                   <i className='sm:text-5xl text-[#304C9C]'>Multi  Services</i> </p> </h1>
+                   </p> </h1>
 
-                <p className='sm:text-xl text-lg font-medium text-center  italic z-50 text-white'>Nettoyage professionnel, entretien complet et gestion immobilière : nous prenons soin <br/>
+                <p className='sm:text-xl text-xl font-medium text-center  italic z-50 text-white'>Nettoyage professionnel, entretien complet et gestion immobilière : nous prenons soin <br/>
                  de vos espaces pour que vous puissiez vous concentrer sur l'essentiel.</p>
 
                  <div className="absolute blur-2xl bg-blue-500 rounded-full h-[440px] w-[440px] opacity-20  bottom-4 ml-64 mt-28"/>
@@ -122,40 +122,25 @@ function Page() {
             </div>
 
 
-            <div className='sm:hidden flex flex-col space-y-8 w-full mt-6 pt-10 pb-4 bg-[#FCFCF7]' id="netoy">
+               <div className='sm:hidden flex flex-col space-y-10 w-full mt-6 mb-5 pt-10 pb-4 bg-[#FCFCF7]' id="nettoy">
             
-                            <h1 className='text-2xl font-semibold ml-4'> Nettoyage et Entretien </h1>
-                             <Swiper
-            
-                                modules={[Navigation, Pagination, Autoplay]}
-                                loop={true}
-                                spaceBetween={50}
-                              slidesPerView={1}
-                              // autoplay={{delay: 3000,
-                              // disableOnInteraction: false
-                              // }}
-                              // pagination={{clickable: true}} 
-                            navigation
-                              className='flex w-full h-auto items-center justify-center mx-10'
-                            
+                            <h1 className='text-2xl font-semibold ml-6'> Nettoyage et Entretien </h1>
+
+                             <div  
+                              className='flex flex-col w-full h-auto items-center justify-center gap-12 px-7'
+                                
                             >
                                   {
                                       nettoyage.map((imo)=>(
-                           <SwiperSlide key={imo.id} id={imo.tag} 
-                           className="w-64  h-auto flex flex-col rounded-md shadow-xl space-y-6   border-b-white/10  relative items-center justify-center group ring-4 ring-white">
-                                 {/* <div className="flex absolute w-full h-full rounded-md  bg-linear-to-b  from-transparent from-40% to-95% to-black "/>
-                                 <Image src="/Hero.jpeg" alt="nettoyage" width={400} height={400} className="object-cover rounded-md w-full h-full"/>
+                           <div key={imo.id} id={imo.tag} 
+                           className="w-full h-auto flex flex-col rounded-md shadow-xl space-y-6  border-b-white/10  relative items-center justify-center group ring-4 ring-white">
 
-                                 <h1 className="absolute text-xl font-bold text-white flex text-center bottom-7 mx-4"> {imo.title} </h1> */}
+                                 <div className="w-full h-[30%]"> 
+                                    <Image src={imo.pic} alt="pc" width={500} height={500} 
+                                      className="object-cover rounded-md w-full h-full"/>
+                                  </div>
 
-                                 <div className="w-full h-52"> <Image src={imo.pic} alt="pc" width={500} height={500} className="object-cover rounded-md w-full h-full"/></div>
-
-                                {/* <div className='items-center justify-center bg-black/35 backdrop-blur-sm w-full rounded-md h-full hidden group-hover:flex absolute'>
-                                  <div className='flex space-x-4 items-center justify-center px-6 py-3 text-lg font-sans font-semibold rounded-full bg-black text-white'>
-                                    <Link href="/Services">Tout les services</Link> <FaArrowRight/>
-                                  </div> */}
-
-                                <div className='flex flex-col space-y-5 px-4 pb-5 '>
+                                <div className='w-full h-[70%] flex flex-col space-y-5 px-4 pb-5 '>
                                     <h1 className="flex sm:text-xl text-xl font-bold "> {imo.title} </h1>
 
                                     <div className='sm:text-md text-lg flex'> 
@@ -163,59 +148,45 @@ function Page() {
                                     </div>
                                 </div>
                                 
-                            </SwiperSlide>
+                            </div>
                         ))
                                   }
             
-                            </Swiper>
-                      </div>
+                            </div>
+                      </div> 
 
-            <div className='sm:hidden flex flex-col space-y-8 w-full mt-6 pt-10 pb-4 bg-[#FCFCF7]' >
+
+            <div className='sm:hidden flex flex-col space-y-10 w-full mt-6 pt-10 pb-4 bg-[#FCFCF7]' id="immo">
             
-                            <h1 className='text-2xl font-semibold ml-4'> Gestion Immobilière </h1>
-                             <Swiper
-            
-                                modules={[Navigation, Pagination, Autoplay]}
-                                loop={true}
-                                spaceBetween={50}
-                              slidesPerView={1}
-                              // autoplay={{delay: 3000,
-                              // disableOnInteraction: false
-                              // }}
-                              // pagination={{clickable: true}} 
-                            navigation
-                              className='flex w-full h-auto items-center justify-center mx-10'
-                                id="immo"
+                            <h1 className='text-2xl font-semibold ml-6'> Gestion Immobilière </h1>
+
+                             <div  
+                              className='flex flex-col w-full h-auto items-center justify-center gap-12 px-7'
+                                
                             >
                                   {
                                       immobilier.map((imo)=>(
-                           <SwiperSlide key={imo.id} id={imo.tag} 
-                           className="w-64  h-auto flex flex-col rounded-md shadow-xl space-y-6   border-b-white/10  relative items-center justify-center group ring-4 ring-white">
-                                 {/* <div className="flex absolute w-full h-full rounded-md  bg-linear-to-b  from-transparent from-40% to-95% to-black "/>
-                                 <Image src="/Hero.jpeg" alt="nettoyage" width={400} height={400} className="object-cover rounded-md w-full h-full"/>
+                           <div key={imo.id} id={imo.tag} 
+                           className="w-full h-auto flex flex-col rounded-md shadow-xl space-y-6  border-b-white/10  relative items-center justify-center group ring-4 ring-white">
 
-                                 <h1 className="absolute text-xl font-bold text-white flex text-center bottom-7 mx-4"> {imo.title} </h1> */}
+                                 <div className="w-full h-[30%]" > 
+                                    <Image src={imo.pic} alt="pc" width={500} height={500} 
+                                      className="object-cover rounded-md w-full h-full"/>
+                                  </div>
 
-                                 <div className="w-full h-52"> <Image src={imo.pic} alt="pc" width={500} height={500} className="object-cover rounded-md w-full h-full"/></div>
-
-                                {/* <div className='items-center justify-center bg-black/35 backdrop-blur-sm w-full rounded-md h-full hidden group-hover:flex absolute'>
-                                  <div className='flex space-x-4 items-center justify-center px-6 py-3 text-lg font-sans font-semibold rounded-full bg-black text-white'>
-                                    <Link href="/Services">Tout les services</Link> <FaArrowRight/>
-                                  </div> */}
-
-                                <div className='flex flex-col space-y-5 px-4 pb-5 '>
+                                <div className='w-full h-[70%] flex flex-col space-y-5 px-4 pb-5 '>
                                     <h1 className="flex sm:text-xl text-xl font-bold "> {imo.title} </h1>
 
-                                    <div className='sm:text-md text-lg flex'> 
+                                    <div className='sm:text-md text-lg flex' > 
                                        {imo.desc}
                                     </div>
                                 </div>
                                 
-                            </SwiperSlide>
+                            </div>
                         ))
                                   }
             
-                            </Swiper>
+                            </div>
                       </div>                 
 
             <Nettoyage/>

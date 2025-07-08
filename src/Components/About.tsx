@@ -3,18 +3,32 @@ import Link from "next/link";
 
 function About() {
   return (
-    <div className="sm:flex hidden sm:px-20 px-10 py-12 w-full sm:h-[500px] justify-between bg-[#f4f1f8] mb-10 backdrop-blur-lg overflow-hidden">
+    <div className="flex  sm:px-20 px-10 py-16 w-full sm:h-[500px] justify-between bg-[#f4f1f8] mb-10 backdrop-blur-lg overflow-hidden">
 
-        <div className="flex flex-col sm:mt-14  h-full sm:w-[45%] w-full ">
-            <h1 className="font-semibold sm:text-3xl text-2xl  flex">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </h1>
+        <div className="flex flex-col sm:mt-7  h-full sm:w-[45%] w-full ">
+            <h1 className="font-semibold sm:text-3xl text-2xl  flex">Le partenaire de confiance qu'il vous faut !!  </h1>
 
-            <p className="font-medium text-gray-500 sm:text-xl my-10 text-lg flex sm:mt-12 sm:leading-[30px]">
+            <p className="font-medium text-gray-500 sm:text-xl my-10 text-lg flex sm:mt-7 sm:leading-[30px]">
 
                 
-                 Depuis notre création, GCIG BENIN  s'impose comme le leader
+                 {/* Depuis notre création, GCIG BENIN  s'impose comme le leader
                     incontournable du nettoyage professionnel et des services immobiliers au Bénin. 
                      Notre expertise reconnue et notre approche sur-mesure font de nous le choix 
-                   privilégié des entreprises et particuliers exigeants.
+                   privilégié des entreprises et particuliers exigeants. */}
+
+                   {/* Découvrez notre entreprise, votre partenaire de confiance pour tous 
+                   vos besoins en nettoyage et entretien, ainsi qu'en gestion de biens immobiliers. 
+                   Nous nous engageons à offrir des services de qualité supérieure,
+                    adaptés à vos exigences spécifiques. Que ce soit pour maintenir 
+                    la propreté de vos espaces ou pour optimiser la gestion de vos propriétés,
+                     notre équipe expérimentée met tout en œuvre pour garantir votre satisfaction. 
+                     Faites le choix de l'excellence et laissez-nous prendre soin de vos biens,
+                    afin que vous puissiez vous concentrer sur ce qui compte vraiment. */}
+
+                    Bienvenue chez nous ! Nous sommes spécialisés dans le nettoyage et l'entretien,
+                     ainsi que dans la gestion de biens immobiliers. Notre équipe dédiée s'assure que
+                      vos espaces restent impeccables et que vos propriétés sont gérées avec soin.
+                     Faites confiance à notre expertise pour un service de qualité qui répond à vos besoins.
                 
                 </p>
 

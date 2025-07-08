@@ -12,7 +12,7 @@ function Footer() {
 
                 <div className="sm:flex items-center sm:space-x-10 space-y-8 ml-6 sm:mt-0 mt-10">
 
-                    <div className="flex space-x-4 items-center ml-3 text-lg sm:ml-0">
+                    <div className="flex sm:hidden space-x-4 items-center ml-3 text-lg sm:ml-0">
                         <FaMapMarkerAlt className="  font-bold animate-bounce text-[#F39200]"/> 
                         <p className="sm:text-xl  font-medium ">localisation</p>
                     </div>
@@ -39,7 +39,7 @@ function Footer() {
 
             </div>
 
-            <div className="grid grid-cols-3 mt-18 gap-5 my-6 ml-8">
+            <div className="grid grid-cols-3 mt-18 gap-5 my-6 ml-4">
                 {
                     footerLink.map((foot)=>(
                         <Link key={foot.id} href={foot.path}
