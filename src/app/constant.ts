@@ -127,7 +127,7 @@ export const footerLink = [
   {
     id: 1,
     title: "Engagements",
-    path: "/#engag"
+    path: "/"
   },
 
     {
@@ -139,7 +139,7 @@ export const footerLink = [
     {
     id: 3,
     title: "Localisation",
-    path: "/Services"
+    path: "/About"
   },
 
     {
@@ -163,13 +163,13 @@ export const footerLink = [
     {
     id: 7,
     title: "Acceuil",
-    path: "/Services"
+    path: "/"
   },
 
     {
     id: 8,
     title: "Pourquoi Nous Choisir ?",
-    path: "/#WhyUs"
+    path: "/#Why"
   },
 
     {

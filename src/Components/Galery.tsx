@@ -4,7 +4,7 @@ import {  FaUser } from 'react-icons/fa';
 function Galery() {
 
     return (
-        <div className="flex flex-col space-y-16   sm:px-20 bg-[#D9E0E8] mb-10 py-5 sm:py-10">
+        <div className="flex flex-col space-y-16   sm:px-20 bg-[#D9E0E8] mb-10 py-5 sm:py-10" id="secteur">
             <div className="flex flex-col items-center px-10 sm:px-0 space-y-2 justify-center text-center">
                 <h1 className="text-3xl font-bold text-pretty">Nous opérons dans plusieurs domaines </h1>
                 <h1 className="text-3xl font-bold text-pretty">à l'échelle nationale</h1>
