@@ -5,29 +5,27 @@ import Head from 'next/head';
 
 function Whatsapp() {
 
-   // Numéro de téléphone avec l'indicatif international (sans le +)
-  const phoneNumber = '229 0152810482'; // Remplacez par votre numéro
+  // Configuration (à personnaliser)
+  const businessPhone = '229 0152810482'; // Votre numéro professionnel avec indicatif (sans +)
+  const welcomeMessage = "Bonjour, comment puis-je vous aider ?"; // Message qui apparaîtra côté entreprise
 
-   const defaultMessage = encodeURIComponent('Comment puis-je vous aider ?');
-  
-  // Génère le lien WhatsApp (fonctionne sur mobile et desktop)
-  const openWhatsApp = () => {
+  const startChat = () => {
+    const encodedMessage = encodeURIComponent(welcomeMessage);
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    const whatsappUrl = isMobile 
-      ? `whatsapp://send?phone=${phoneNumber}&text=${defaultMessage}`
-      : `https://wa.me/${phoneNumber}?text=${defaultMessage}`;
+    
+    // Lien avec le message préinstallé côté BUSINESS (nécessite un compte WhatsApp Business)
+    const whatsappUrl = isMobile
+      ? `https://wa.me/${businessPhone}?text=${encodedMessage}`
+      : `https://web.whatsapp.com/send?phone=${businessPhone}&text=${encodedMessage}`;
     
     window.open(whatsappUrl, '_blank');
   };
 
-  return (
-    <div onClick={openWhatsApp} className="fixed bottom-4 animate-bounce ring-4 right-4 z-50  sm:px-6 sm:py-2 p-2 rounded-full shadow-lg flex bg-green-400 text-White sm:ring-2 ring-white
-     items-center justify-center cursor-pointer hover:bg-[#F39200] transition-colors duration-300 group">
-          <Head>
-            {/* Meta pour le référencement */}
-            <meta name="whatsapp:contact" content={`+${phoneNumber}`} />
-          </Head>
 
+  return (
+    <div onClick={startChat} className="fixed bottom-4 animate-bounce ring-4 right-4 z-50  sm:px-6 sm:py-2 p-2 rounded-full shadow-lg flex bg-green-400 text-White sm:ring-2 ring-white
+     items-center justify-center cursor-pointer hover:bg-[#F39200] transition-colors duration-300 group">
+         
         <div  className="flex items-center justify-center gap-4" >
              <FaWhatsapp className="sm:text-3xl text-4xl font-bold sm:animate-bounce text-white " />
             <p className="sm:flex hidden text-lg font-semibold text-white group-hover:flex">Ecrivez-Nous !</p>
