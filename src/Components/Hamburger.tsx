@@ -1,5 +1,7 @@
 "use client"
 
+
+import {FaFacebook , FaWhatsapp , FaLinkedin , FaInstagram, FaTelegram , FaTwitter, FaHamburger} from 'react-icons/fa';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -18,6 +20,15 @@ function Hamburger() {
                 <li className={`hover:text-[#F39200] ${pathname ==="/About" && "text-[#F39200]"}`}> <Link href="/About">  About Us  </Link> </li>
                 <li className={`hover:text-[#F39200] ${pathname ==="/Contact" && "text-[#F39200]"}`}> <Link href="/Contact">  Contact  </Link> </li>
             </ul>
+
+
+               <ul className="flex mt-10  space-x-8  text-xl font-medium  ">
+                    <li> <Link href="https://www.facebook.com/profile.php?id=61576113031036&mibextid=rS40aB7S9Ucbxw6v" target="_blank"><FaFacebook className='text-[#1877F2]'/> </Link> </li>
+                    {/* <li> <FaWhatsapp className="text-green-500"/> </li> */}
+                    <li> <Link href="http://www.linkedin.com/in/gcig-benin-9b0207365" target="_blank"><FaLinkedin className="text-[#0077B5]"/> </Link> </li>
+                    <li> <Link href="https://www.instagram.com/gcig_benin/"  target="_blank"> <FaInstagram className="text-[#E4405F]"/></Link>  </li>
+                    
+                </ul>
         </div>
     )
 }
