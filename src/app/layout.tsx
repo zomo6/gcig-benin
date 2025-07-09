@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
+import Whatsapp from "@/Components/Whatsapp";
 
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({
         
         <main className=""> {children}</main>
 
+        <Whatsapp/>
         <Footer/>
       </body>
     </html>
