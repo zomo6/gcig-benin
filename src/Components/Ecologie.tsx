@@ -84,7 +84,7 @@ function Ecologie() {
         <div className="mobileUx relative sm:hidden space-y-18">
 
 
-        <div className=" flex flex-col  space-y-7  pl-10 pr-14 z-50">
+        <div className=" flex flex-col  space-y-7  pl-10 pr-10 z-50">
             <h1 className="flex text-2xl font-bold">
                 Des produits professionnels respectueux de votre santé et de l'environnement</h1>
 
@@ -121,7 +121,7 @@ function Ecologie() {
                            <div  className='flex space-x-5  justify-between  text-white w-full h-auto'>
 
                                     <div className="rounded-md flex shadow-xl bg-white w-36 h-16 ">
-                                        <FaCheckCircle className='text-blue-700 text-3xl text-center mt-4 ml-3.5 '/>
+                                        <FaCheckCircle className='text-blue-700 text-3xl text-center mt-4 ml-3 '/>
                                     </div>
 
                                     <div className="flex flex-col space-y-4">
@@ -142,7 +142,7 @@ function Ecologie() {
                            <div  className='flex space-x-5  justify-between  text-white w-full h-auto'>
 
                                     <div className="rounded-md flex shadow-xl bg-white w-36 h-16 ">
-                                        <FaShieldAlt className='text-gray-600 text-3xl text-center mt-4 ml-3.5 '/>
+                                        <FaShieldAlt className='text-gray-600 text-3xl text-center mt-4 ml-3 '/>
                                     </div>
 
                                     <div className="flex flex-col space-y-4">
@@ -163,7 +163,7 @@ function Ecologie() {
                            <div  className='flex space-x-5  justify-between  text-white w-full h-auto'>
 
                                     <div className="rounded-md flex shadow-xl bg-white w-36 h-16 ">
-                                        <FaLeaf className='text-green-500 text-3xl text-center mt-4 ml-3.5 '/>
+                                        <FaLeaf className='text-green-500 text-3xl text-center mt-4 ml-3 '/>
                                     </div>
 
                                     <div className="flex flex-col space-y-4">
