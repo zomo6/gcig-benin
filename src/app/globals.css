@@ -68,6 +68,11 @@ body {
   
 }
 
+.ecologie{
+  background: url('/bgTwo.jpg')  ;
+  background-size: cover ;
+}
+
 .serv{
   background: url('/a.jpg')  ;
   background-size: cover ;

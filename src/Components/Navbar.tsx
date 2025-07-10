@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Hamburger from "@/Components/Hamburger";
-import {FaFacebook , FaWhatsapp , FaLinkedin , FaPhone , FaMapMarkerAlt , FaEnvelope , FaInstagram, FaTelegram , FaTwitter, FaHamburger, FaBars} from 'react-icons/fa';
+import {FaFacebook , FaWhatsapp , FaTimes ,  FaLinkedin , FaPhone , FaMapMarkerAlt , FaEnvelope , FaInstagram, FaTelegram , FaTwitter, FaHamburger, FaBars} from 'react-icons/fa';
 
 function Navbar() {
     
@@ -50,6 +50,7 @@ function Navbar() {
                      <div className="w-full h-[100vh] backdrop-blur-2xl bg-black opacity-95
                      z-90 flex flex-col py-5 pl-8 absolute top-0 right-0 sm:hidden">
             
+                    <FaTimes onClick={()=>setOpen(!open)} className="cursor-pointer fixed top-6 right-6 text-3xl z-50 font-bold text-white"/>
 
              <ul className='link flex flex-col space-y-6  mt-10 text-3xl font-semibold text-pretty text-white '>
                 <li onClick={()=>setOpen(!open)} className={`hover:text-[#F39200] ${pathname ==="/" && "text-[#F39200]"}`}> <Link href="/">  Acceuil  </Link> </li>

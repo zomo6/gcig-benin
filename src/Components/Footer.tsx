@@ -43,7 +43,7 @@ function Footer() {
                 {
                     footerLink.map((foot)=>(
                         <Link key={foot.id} href={foot.path}
-                         className='font-serif font-semibold text-md text-pretty text-white/70'>
+                         className='font-serif font-semibold sm:text-lg text-md text-pretty text-white/70'>
                             {foot.title}
                         </Link>
                     ))

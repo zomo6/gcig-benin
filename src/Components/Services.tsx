@@ -82,13 +82,13 @@ const Services: React.FC<ServicesProps> = () => {
 
                                  <h1 className="absolute text-xl font-bold text-white flex text-center bottom-7 mx-4"> {imo.title} </h1>
 
-                                  <Link href={`/Services#${imo.tag}`} className="sm:flex hidden rounded-full shadow-xl ring-4 ring-white bg-[#f5f5f5] items-center justify-center absolute z-40 px-5 py-1 right-3 top-3">
+                                  {/* <Link href={`/Services#${imo.tag}`} className="sm:flex hidden rounded-full shadow-xl ring-4 ring-white bg-[#f5f5f5] items-center justify-center absolute z-40 px-5 py-1 right-3 top-3">
                                    <FaArrowRight className='font-semibold text-xl -rotate-25'/>
                                  </Link >
 
                                  <Link href="/Services#netoy" className="flex sm:hidden rounded-full shadow-xl ring-4 ring-white bg-[#f5f5f5] items-center justify-center absolute z-40 px-5 py-1 right-3 top-3">
                                    <FaArrowRight className='font-semibold text-xl -rotate-25'/>
-                                 </Link >
+                                 </Link > */}
 
                                 {/* <div className='items-center justify-center bg-black backdrop-blur-sm w-full z-20 rounded-md h-full hidden group-hover:flex absolute'>
                                   <div className='flex space-x-4 items-center justify-center px-6 py-3 text-lg font-sans font-semibold rounded-full bg-black text-white'>
