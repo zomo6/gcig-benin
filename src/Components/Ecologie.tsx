@@ -15,8 +15,8 @@ function Ecologie() {
 
         <div className="absolute sm:flex hidden w-full h-full left-0 bg-gradient-to-r from-black via-white/70 to-transparent opacity-30 backdrop-blur-3xl" />  
 
-        <div className="sm:flex shadow-xl flex-col hidden space-y-12  w-[40%] z-50 bg-white/10 py-16 px-10 rounded-md backdrop-blur-2xl">
-            <h1 className="flex text-2xl font-bold text-white/80">Des produits professionnels respectueux de votre santé et de l'environnement</h1>
+        <div className="sm:flex shadow-xl flex-col hidden space-y-12  w-[40%] z-50 bg-white/50 py-16 px-10 rounded-md backdrop-blur-2xl">
+            <h1 className="flex text-2xl font-semibold">Des produits professionnels respectueux de votre santé et de l'environnement</h1>
 
             {/* Nos produits de nettoyage : efficacité , sécurité , écologie */}
 
