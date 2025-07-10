@@ -6,7 +6,7 @@ import Head from 'next/head';
 function Whatsapp() {
 
   // Configuration (à personnaliser)
-  const businessPhone = '229 0152810482'; // Votre numéro professionnel avec indicatif (sans +)
+  const businessPhone = '229 0197977303'; // Votre numéro professionnel avec indicatif (sans +)
   const welcomeMessage = "Bonjour, comment puis-je vous aider ?"; // Message qui apparaîtra côté entreprise
 
   const startChat = () => {
