@@ -99,7 +99,7 @@ function Ecologie() {
             {/* <div className="absolute right-2 h-full w-[40%] bg-white"/> */}
 
 
-             <div className='sm:hidden flex w-full items-center px-10'>
+             <div className='sm:hidden flex w-full items-center pl-10 pr-7'>
                 
              <Swiper
 
