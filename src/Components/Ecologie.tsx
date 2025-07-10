@@ -118,10 +118,10 @@ function Ecologie() {
                       
                         <SwiperSlide >
 
-                           <div  className='flex space-x-10  justify-between  text-white w-full h-auto'>
+                           <div  className='flex space-x-5  justify-between  text-white w-full h-auto'>
 
-                                    <div className="rounded-md flex shadow-xl bg-white w-40 h-16 ">
-                                        <FaCheckCircle className='text-blue-700 text-3xl text-center mt-4 ml-3 '/>
+                                    <div className="rounded-md flex shadow-xl bg-white w-36 h-16 ">
+                                        <FaCheckCircle className='text-blue-700 text-3xl text-center mt-4 ml-1.5 '/>
                                     </div>
 
                                     <div className="flex flex-col space-y-4">
