@@ -15,12 +15,12 @@ function Ecologie() {
 
         <div className="absolute sm:flex hidden w-full h-full left-0 bg-gradient-to-r from-black via-white/70 to-transparent opacity-30 backdrop-blur-3xl" />  
 
-        <div className="sm:flex flex-col hidden space-y-9  w-[40%] z-50">
-            <h1 className="flex text-2xl font-bold">Des produits professionnels respectueux de votre santé et de l'environnement</h1>
+        <div className="sm:flex shadow-xl flex-col hidden space-y-12  w-[40%] z-50 bg-white/10 py-16 px-10 rounded-md backdrop-blur-2xl">
+            <h1 className="flex text-2xl font-bold text-white/80">Des produits professionnels respectueux de votre santé et de l'environnement</h1>
 
             {/* Nos produits de nettoyage : efficacité , sécurité , écologie */}
 
-            <p className='flex font-bold text-3xl '>
+            <p className='flex font-bold text-xl  text-white'>
                 Nous utilisons des produits de qualité professionnelle, sélectionnés 
                 pour leur efficacité, leur sécurité et leurs respect de l'environnement.
             </p>
@@ -142,7 +142,7 @@ function Ecologie() {
                            <div  className='flex space-x-5  justify-between  text-white w-full h-auto'>
 
                                     <div className="rounded-md flex shadow-xl bg-white w-36 h-16 ">
-                                        <FaShieldAlt className='text-gray-600 text-3xl text-center mt-4 ml-3 '/>
+                                        <FaShieldAlt className='text-gray-600 text-3xl text-center mt-4 ml-1.5 '/>
                                     </div>
 
                                     <div className="flex flex-col space-y-4">
@@ -163,7 +163,7 @@ function Ecologie() {
                            <div  className='flex space-x-5  justify-between  text-white w-full h-auto'>
 
                                     <div className="rounded-md flex shadow-xl bg-white w-36 h-16 ">
-                                        <FaLeaf className='text-green-500 text-3xl text-center mt-4 ml-3 '/>
+                                        <FaLeaf className='text-green-500 text-3xl text-center mt-4 ml-1.5 '/>
                                     </div>
 
                                     <div className="flex flex-col space-y-4">
