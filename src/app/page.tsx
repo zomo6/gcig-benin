@@ -10,6 +10,7 @@ import Testimony from "@/Components/Testimony";
 import First from "@/Components/First";
 import About from "@/Components/About";
 import Ecologie from "@/Components/Ecologie";
+import Devis from "@/Components/Devis";
 
 export default function Home() {
   return (
@@ -24,9 +25,10 @@ export default function Home() {
         <Ecologie/>
         <Galery/> 
         <Garanty/> 
-        <Proof/> 
+        {/* <Proof/>  */}
         <Testimony/> 
-        <CTA/>
+        {/* <CTA/> */}
+        <Devis/>
         
     </div>
   );

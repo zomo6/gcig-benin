@@ -34,7 +34,7 @@ function Hero() {
 
                 <div className="flex space-x-8 font-semibold mt-16 text-xl">
                     <Link href="/Services " className="px-8 py-3 rounded-full text-center bg-linear-to-r from-[#F39200] to-[#304C9C] transition-all ease-in hover:text-black"> Nos Services </Link>
-                      <Link href="/Contact" className="px-8 py-3 rounded-full text-center shadow ring ring-white text-gray-300  transition-all ease-in hover:bg-white  hover:text-black">Contactez-Nous </Link>
+                      <Link href="/Contact" className="px-8 py-3 rounded-full text-center shadow ring ring-white text-gray-300  transition-all ease-in hover:bg-white  hover:text-black">Obtenir un devis </Link>
                 </div>
             </div>
 
@@ -74,7 +74,7 @@ function Hero() {
                 </p>
 
                 <div className="flex flex-col space-y-8  w-full mx-32 font-semibold mt-18  z-50">
-                    <Link href="/Services " className="px-8 py-4 w-full rounded-full text-center bg-linear-to-r from-[#F39200]/30 to-[#304C9C] transition-all ease-in hover:text-black"> Nos Services </Link>
+                    <Link href="/Contact " className="px-8 py-4 w-full rounded-full text-center bg-linear-to-r from-[#F39200]/30 to-[#304C9C] transition-all ease-in hover:text-black"> Obtenir un devis </Link>
                     {/* <Link href="/Contact" className="px-8 py-3 rounded-full w-full text-center shadow ring ring-white text-gray-300  transition-all ease-in hover:bg-white  hover:text-black">Contactez-Nous </Link> */}
                 </div>
             </div>
@@ -103,7 +103,7 @@ function Hero() {
                 </p>
 
                 <div className="flex flex-col space-y-8   w-full mx-32 font-semibold mt-18  z-50">
-                    <Link href="/Services " className="px-8 py-4 w-full rounded-full text-center bg-linear-to-r from-[#F39200]/30 to-[#304C9C] transition-all ease-in hover:text-black"> Nos Services </Link>
+                    <Link href="/Contact " className="px-8 py-4 w-full rounded-full text-center bg-linear-to-r from-[#F39200]/30 to-[#304C9C] transition-all ease-in hover:text-black"> Obtenir un devis </Link>
                     {/* <Link href="/Contact" className="px-8 py-3 rounded-full w-full text-center shadow ring ring-white text-gray-300  transition-all ease-in hover:bg-white  hover:text-black">Contactez-Nous </Link> */}
                 </div>
              </div>
