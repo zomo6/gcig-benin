@@ -21,12 +21,12 @@ function Page() {
                   <p className="sm:text-7xl text-3xl text-[#F39200] text-center">GCIG BENIN 
                    </p> </h1>
 
-                <p className='sm:text-xl text-xl font-medium   italic z-50 text-white'>
+                <p className='sm:text-xl text-xl font-medium text-center  italic z-50 text-white'>
                     Notre service de gestion immobilière vous accompagne dans tous les aspects de votre patrimoine, 
                     avec une approche globale et sur mesure.
                 </p>
 
-                <p className='sm:text-xl text-xl font-medium   italic z-50 text-white'>
+                <p className='sm:text-xl text-xl font-medium text-center  italic z-50 text-white'>
                      Nous assurons le recouvrement des loyers et la gestion 
                     locative pour sécuriser vos revenus, tout en proposant des solutions clés en main pour l’achat, 
                     la vente et la mise en valeur de terrains (y compris les levés topographiques précis).

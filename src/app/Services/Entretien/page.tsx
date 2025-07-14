@@ -21,7 +21,7 @@ function Page() {
                   <p className="sm:text-7xl text-3xl text-[#F39200] ">GCIG BENIN 
                    </p> </h1>
 
-                <p className='sm:text-xl text-xl font-medium   italic z-50 text-white'>
+                <p className='sm:text-xl text-xl font-medium text-center  italic z-50 text-white'>
 
                     Nous proposons des services de nettoyage haut de gamme pour les espaces industriels,
                      bureaux et commerces, assurant un environnement hygiénique et accueillant.  
@@ -29,7 +29,7 @@ function Page() {
                       adaptés pour un résultat irréprochable, sans perturber vos activités. */}
                 </p>
 
-                <p className='sm:text-xl text-xl font-medium   italic z-50 text-white'>
+                <p className='sm:text-xl text-xl font-medium text-center  italic z-50 text-white'>
                     Nous complétons notre offre par des prestations d’entretien extérieur 
                     (jardinage, voirie) et un service de nettoyage automobile (intérieur/extérieur)
                     pour une propreté 360°.
