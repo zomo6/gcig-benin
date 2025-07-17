@@ -313,7 +313,7 @@ const Services: React.FC<ServicesProps> = () => {
 
                         <h1 className="text-3xl font-bold ">Nettoyage et Entretient</h1>
 
-                        <Link href="/Services/Entretien" className=" hover:bg-blue-400 ml-24 ring-2  rounded-full bg-white/40 backdrop-blur-md px-7 py-3 text-center text-md font-semibold">
+                        <Link href="/Services/Entretien" className=" hover:bg-blue-400 ml-18 ring-2  rounded-full bg-white/40 backdrop-blur-md px-7 py-3 text-center text-md font-semibold">
                             En Savoir Plus
                         </Link>
                       </div>
@@ -332,7 +332,7 @@ const Services: React.FC<ServicesProps> = () => {
 
                         <h1 className="text-3xl font-bold ">Gestion Immobilière</h1>
 
-                        <Link href="/Services/Immobilier" className=" hover:bg-blue-400 ml-24  ring-2  rounded-full bg-white/40 backdrop-blur-md px-7 py-3 text-center text-md font-semibold">
+                        <Link href="/Services/Immobilier" className=" hover:bg-blue-400 ml-18  ring-2  rounded-full bg-white/40 backdrop-blur-md px-7 py-3 text-center text-md font-semibold">
                             En Savoir Plus
                         </Link>
 
