@@ -19,7 +19,7 @@ function Footer() {
 
                     <div className="flex items-center sm:mt-7 sm:text-xl text-lg font-medium space-x-6"> 
                         <FaPhone className="rotate-90 text-2xl font-bold animate-bounce text-[#F39200]"/>
-                         <div className="flex space-x-3"> <i>01 9797 7303 </i> <i className="text-[#F39200]">/</i> <i>01 4646 4679</i> </div>
+                         <div className="flex space-x-3"> <i>(+229) </i>  <i>01 9797 7303 </i> <i className="text-[#F39200]">/</i> <i>01 4646 4679</i> </div>
                      </div>
 
                     <div className="flex space-x-4 items-center ml-3 text-lg sm:ml-0">

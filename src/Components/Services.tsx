@@ -9,7 +9,7 @@ import 'swiper/css/autoplay';
 import { nettoyage , immobilier } from '@/app/constant';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaArrowRight , FaHome, FaUser } from 'react-icons/fa';
+import { FaArrowRight , FaHome, FaUser , FaBroom , FaToolbox } from 'react-icons/fa';
 // import { Router } from 'next/router';
 import { useRouter } from 'next/navigation'
 
@@ -307,14 +307,19 @@ const Services: React.FC<ServicesProps> = () => {
                       <Image src="/a.jpg" alt="service de nettoyage et entretien" width={300} height={300}
                        className='w-full h-full object-cover rounded-lg'/>
 
-                      <div className='absolute space-y-10  z-40 bottom-14 left-10 text-white items-center justify-start'>
+                                    <div className='absolute   z-40 bottom-14 left-10 text-white items-center justify-center space-y-5 text-center'>
 
-                        {/* <FaUser className=" text-2xl font-medium"/> */}
+                
+                           <FaBroom className="flex mx-auto items-center text-center p-3 ring-4 ring-white rounded-full text-8xl font-medium"/>
 
-                        <h1 className="text-3xl font-bold ">Nettoyage et Entretient</h1>
+                        <h1 className="text-3xl font-bold ">Nettoyage et Entretien</h1>
 
-                        <Link href="/Services/Entretien" className=" hover:bg-blue-400 ml-12  ring-2  rounded-full bg-white/40 backdrop-blur-md px-7 py-3 text-center text-md font-semibold">
+                        {/* <Link href="/Services/Immobilier" className=" hover:bg-blue-400 ml-12  ring-2  rounded-full bg-white/40 backdrop-blur-md px-7 py-3 text-center text-md font-semibold">
                             En Savoir Plus
+                        </Link> */}
+
+                        <Link href="/Services/Entretien"  className='mx-auto flex items-center justify-center  text-xl font-semibold text-white underline underline-offset-4'>
+                                Clickez Ici 
                         </Link>
                       </div>
 
