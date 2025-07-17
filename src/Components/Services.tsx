@@ -318,7 +318,7 @@ const Services: React.FC<ServicesProps> = () => {
                             En Savoir Plus
                         </Link> */}
 
-                        <Link href="/Services/Entretien"  className='mx-auto flex items-center justify-center  text-xl font-semibold text-white underline underline-offset-4'>
+                        <Link href="/Services/Entretien"  className='mx-auto flex items-center justify-center  text-xl font-semibold text-[#F39200] underline underline-offset-4'>
                                 Clickez Ici 
                         </Link>
                       </div>
@@ -342,7 +342,7 @@ const Services: React.FC<ServicesProps> = () => {
                             En Savoir Plus
                         </Link> */}
 
-                        <Link href="/Services/Immobilier"  className='mx-auto flex items-center justify-center  text-xl font-semibold text-white underline underline-offset-4'>
+                        <Link href="/Services/Immobilier"  className='mx-auto flex items-center justify-center  text-xl font-semibold text-[#F39200] underline underline-offset-4'>
                                 Clickez Ici 
                         </Link>
                       </div>
