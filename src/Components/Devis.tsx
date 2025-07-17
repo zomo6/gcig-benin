@@ -14,7 +14,7 @@ function Devis() {
 
         <p className="text-lg my-6 sm:font-medium sm:mt-12 sm:text-xl  sm:mx-32 text-center z-50"> Notre équipe experte s'engage à vous proposer une solution sur-mesure, économe et adaptée à vos spécificités.</p>
 
-        <Link href="/Contact" className="bg-[#F39200] mt-8  px-5 py-3 z-50 sm:mt-14 text-lg sm:text-xl ml-18 my-5 text-center text-white sm:px-7 sm:py-3 font-medium rounded-lg hover:bg-blue-600 transition duration-300">
+        <Link href="/Contact" className="bg-[#F39200] mt-12  px-5 py-3 z-50 sm:mt-14 text-lg sm:text-xl ml-24 mb-5 text-center text-white sm:px-7 sm:py-3 font-medium rounded-lg hover:bg-blue-600 transition duration-300">
           Obtenir un devis
         </Link>
     </div>
