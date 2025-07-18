@@ -85,7 +85,7 @@ function Navbar() {
 
                                     <div className="flex  space-x-6 items-center  ">
                                         <FaMapMarkerAlt className="text-2xl  font-bold animate-bounce text-[#F39200]"/> 
-                                        <p className="text-xl  font-medium ">Abomey-Calavi, Ayitchédji</p>
+                                        <p className="text-xl  font-medium ">Abomey-Calavi, Aïtchedji</p>
                                     </div>
                                 </div>
                 

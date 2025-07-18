@@ -14,7 +14,7 @@ function Footer() {
 
                     <div className="flex  sm:mt-7  space-x-2 items-center ml-3 text-lg sm:ml-0">
                         <FaMapMarkerAlt className="  font-bold animate-bounce text-[#F39200]"/> 
-                        <p className="sm:text-lg  font-medium ">Abomey-Calavi, Ayitchédji</p>
+                        <p className="sm:text-lg  font-medium ">Abomey-Calavi, Aïtchedji</p>
                     </div>
 
                     <div className="flex items-center sm:mt-7 sm:text-lg text-lg font-medium space-x-2"> 
