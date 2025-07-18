@@ -9,7 +9,7 @@ import 'swiper/css/autoplay';
 import { nettoyage , immobilier } from '@/app/constant';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaArrowRight , FaHome, FaUser , FaBroom , FaToolbox } from 'react-icons/fa';
+import { FaArrowRight , FaHome, FaUser , FaBroom , FaToolbox, FaTint } from 'react-icons/fa';
 // import { Router } from 'next/router';
 import { useRouter } from 'next/navigation'
 
@@ -307,10 +307,10 @@ const Services: React.FC<ServicesProps> = () => {
                       <Image src="/a.jpg" alt="service de nettoyage et entretien" width={300} height={300}
                        className='w-full h-full object-cover rounded-lg'/>
 
-                                    <div className='absolute pt-6  z-40  left-16 text-white items-center justify-center space-y-5 text-center'>
+                                    <div className='absolute pt-6  z-40  left-12 text-white items-center justify-center space-y-5 text-center'>
 
                 
-                           <FaBroom className="flex mx-auto items-center text-center p-3 ring-4 ring-white rounded-full text-8xl font-medium"/>
+                           <FaTint className="flex mx-auto items-center text-center p-3 ring-4 ring-white rounded-full text-8xl font-medium"/>
 
                         <h1 className="text-3xl font-bold ">Nettoyage et Entretien</h1>
 
