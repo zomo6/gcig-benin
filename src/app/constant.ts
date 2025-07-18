@@ -138,7 +138,7 @@ export const footerLink = [
 
     {
     id: 3,
-    title: "Localisation",
+    title: "Histoire",
     path: "/About"
   },
 
