@@ -309,7 +309,7 @@ const Services: React.FC<ServicesProps> = () => {
 
                       <div className='absolute pt-6  z-40  w-full h-full text-white items-center justify-center space-y-5 text-center'>
 
-                        <Image src="/care.png" alt="nettoyge et entretien" width={120} height={120}  className='rounded-full p-1 ml-40 ring-4 ring-white'/>
+                        <Image src="/care.png" alt="nettoyge et entretien" width={120} height={120}  className='rounded-full p-1 ml-32 ring-4 ring-white'/>
                 
                            {/* <FaTint className="flex mx-auto items-center text-center p-3 ring-4 ring-white rounded-full text-8xl font-medium"/> */}
 
