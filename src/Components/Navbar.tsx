@@ -71,7 +71,7 @@ function Navbar() {
                                 </ul>
 
 
-                                <div className='social_medias flex flex-col  text-white space-y-8 mt-10'>
+                                <div className='social_medias flex flex-col  text-white space-y-8 mt-10 mr-4'>
 
                                     <div className="flex items-center   font-medium space-x-6"> 
                                         <FaPhone className="rotate-90 text-2xl font-bold animate-bounce text-[#F39200]"/>
@@ -85,7 +85,7 @@ function Navbar() {
 
                                     <div className="flex  space-x-6 items-center  ">
                                         <FaMapMarkerAlt className="text-2xl  font-bold animate-bounce text-[#F39200]"/> 
-                                        <p className="text-xl  font-medium ">localisation</p>
+                                        <p className="text-xl  font-medium ">Abomey-Calavi, à 600m de la Fececam BENIN</p>
                                     </div>
                                 </div>
                 

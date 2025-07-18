@@ -14,7 +14,7 @@ function Footer() {
 
                     <div className="flex sm:hidden space-x-4 items-center ml-3 text-lg sm:ml-0">
                         <FaMapMarkerAlt className="  font-bold animate-bounce text-[#F39200]"/> 
-                        <p className="sm:text-xl  font-medium ">localisation</p>
+                        <p className="sm:text-xl  font-medium ">Abomey-Calavi, à 600m de la Fececam BENIN</p>
                     </div>
 
                     <div className="flex items-center sm:mt-7 sm:text-xl text-lg font-medium space-x-6"> 
