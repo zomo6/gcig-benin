@@ -311,7 +311,7 @@ const Services: React.FC<ServicesProps> = () => {
 
                         {/* <Image src="/care.png" alt="nettoyge et entretien" width={120} height={120}  className='rounded-full object-cover p-1 ml-36 ring-4 ring-white'/> */}
                 
-                           <FaBroom className="flex mx-auto items-center text-center p-3 ring-4 ring-white rounded-full text-8xl font-medium"/>
+                           <FaTint className="flex mx-auto items-center text-center p-3 ring-4 ring-white rounded-full text-8xl font-medium"/>
 
                         <h1 className="text-3xl font-bold ">Nettoyage et Entretien</h1>
 
